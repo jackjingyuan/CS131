@@ -70,23 +70,21 @@ let rec find_symbo_to_T symbo rule table= match rule with
 []->true|
  h::t-> match h with
             T d->find_symbo_to_T symbo t table|
-            N n->match n with
-                      symbo-> false|
-                      _->if find_table n table
-                            then find_symbo_to_T symbo t table
-                            else false
-
+            N n->if n = symbo
+                      then false
+                      else  if find_table n table
+                              then find_symbo_to_T symbo t table
+                              else false
 
 and find_table symbo table = match table with
  []->false|
  h::t-> match h with
-           (nt, rule)->match nt with
-                             symbo->if find_symbo_to_T symbo rule table
-                                            then true
-                                            else find_table symbo t|
-                             _->find_table symbo t
+           (nt, rule)->if nt = symbo then 
+                                        if find_symbo_to_T nt rule table
+                                        then true
+                                        else find_table symbo t
+                            else find_table symbo t
 ;;
-
 let rec check_list rule table=match rule with 
 []->true|
 h::d->match h with 
@@ -96,14 +94,14 @@ h::d->match h with
                      else false
  ;;
   
-let rec check_grammar table otable= match table with 
-           h::t->match h with 
-                    (title, rule)->if check_list rule otable
-                                        then h::check_grammar t otable
-                                        else check_grammar t otable
-;;
-
-let rec filter_blind_alleys g=match g with
+ let rec check_grammar table otable= match table with 
+ []->[]|
+ h::t->match h with 
+          (title, rule)->if check_list rule otable
+                              then h::check_grammar t otable
+                              else check_grammar t otable
+ ;;
+let filter_blind_alleys g=match g with
            (h, t)->(h, check_grammar t t)
 ;;
 
