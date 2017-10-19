@@ -10,36 +10,26 @@ let convert_grammar gram1 = match gram1 with
                             |[]->[]
 ) in
 (start, (fun nt -> production nt rules))
-;;
-
-let rec match_list productionf list symbol=match list with
-|[]->false;;
-|(T tterm)::tail->if tterm = symbol
-                      then true 
-                      else match_list productionf tail symbol
-|(N nterm)::tail->match_table productionf (productionf nterm) symbol
-
-and
-
-rec match_table productionf rules symbol=match rules with
-|[]->false;;
-|head::tail->if match_list productionf head symbol
-                  then true 
-                  else match_table productionf tail symbol 
-;;
 
 
+let rec match_rule productionf rule acceptor derv fram =match rule with
+|[]->acceptor derv fram
+|hd::tl->match fram with
+             |[]->None
+             |hsymbol::tsymbol->match rule with 
+                                |(T tterm)::tail->if tterm = hsymbol
+                                                           then match_rule productionf tail acceptor derv tsymbol
+                                                           else None
+                               |(N nterm)::tail->(match_table productionf (productionf nterm) nterm (match_rule productionf tail acceptor) derv fram)
+                               
+and 
+match_table productionf rules nonterm acceptor derv fram = match rules with 
+|[]->None
+|hd::tl->match (match_rule productionf hd acceptor (derv@[nonterm, hd]) fram) with 
+         |None->match_table productionf tl nonterm acceptor derv fram
+         |x-> x              
 
 
 
-let rec match_list 
-
-let rec matcher productionf rules dev frag =match rules with
-|head::tail->match head with 
-                    |(N nterm)->matcher productionf (productionf nterm)
-                    |(T tterm)->if List.hd(frag)=tterm
-                                       then true
-                                       else 
-
-let parse_prefix gram acceptor frag =
-  let matcher  (snd gram) ((snd gram) (fst gram))
+let parse_prefix gram acceptor frag = match gram with
+|(nonterm, productionf)->match_table productionf (productionf nonterm) nonterm acceptor [] frag
