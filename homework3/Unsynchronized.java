@@ -10,8 +10,6 @@ class Unsynchronized implements State {
 
     public byte[] current() { return value; }
 
-	// Remove synchronized key-word so that this is
-	// no longer DRF.
     public boolean swap(int i, int j) {
 	if (value[i] <= 0 || value[j] >= maxval) {
 	    return false;

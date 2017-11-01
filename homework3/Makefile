@@ -1,11 +1,12 @@
 JC=javac
+JFlag=-g
 JVM=java
 TNum=32
 JPack=jar
 JPFlag=cf
 
 all:
-	$(JC) BetterSafe.java GetNSet.java NullState.java State.java SwapTest.java SynchronizedState.java Unsynchronized.java UnsafeMemory.java
+	$(JC) $(JFlag) BetterSafe.java GetNSet.java NullState.java State.java SwapTest.java SynchronizedState.java Unsynchronized.java UnsafeMemory.java
 test:
 		$(JVM) UnsafeMemory Synchronized $(TNum) 1000000 6 5 6 3 0 3
 		$(JVM) UnsafeMemory GetNSet $(TNum) 1000000 6 5 6 3 0 3

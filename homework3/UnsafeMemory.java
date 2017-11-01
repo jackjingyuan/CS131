@@ -8,7 +8,7 @@ class UnsafeMemory {
 	    byte maxval = (byte) parseInt (args[3], 0, 127);
 	    byte[] value = new byte[args.length - 4];
 	    for (int i = 4; i < args.length; i++)
-		value[i - 4] = (byte) parseInt (args[i], 0, maxval);
+			value[i - 4] = (byte) parseInt (args[i], 0, maxval);
 	    byte[] stateArg = value.clone();
 	    State s;
 	    if (args[0].equals("Null"))s = new NullState(stateArg, maxval);
