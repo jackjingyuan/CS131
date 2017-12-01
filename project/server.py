@@ -308,7 +308,7 @@ class EchoServer(asyncio.Protocol):
         Server_Log.info('send to '+str(self.address)+'with AT message\n{}'.format(At_msg));
         self.transport.write(At_msg.encode());
         task=event_loop.create_task(self.get_html(url_link));
-        task.add_done_callback(partial(handler_html, 2));
+        task.add_done_callback(partial(self.handler_html, 2));
         ##########取得/处理html文件###########
         return;
 
