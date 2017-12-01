@@ -61,7 +61,7 @@ class EchoClient(asyncio.Protocol):
     def connection_made(self, transport):
         self.transport=transport;
         self.address=transport.get_extra_info('peername');
-        Server_Log.info('As Client: connectiong to '+str(self.address));
+        Server_Log.info('As Client: connectiong to _{}_{}'.format(*self.address));
 
         #发送信息
         transport.write(self.message.encode());
@@ -103,12 +103,12 @@ class EchoServer(asyncio.Protocol):
     def connection_made(self, transport):
         self.transport=transport;
         self.address=transport.get_extra_info('peername');
-        Server_Log.info('connection accpted from '+str(self.address));
+        Server_Log.info('connection accpted from_{}_{}'.format(*self.address));
 
     #收到信息    
     def data_received(self, data):
         msg=data.decode();
-        Server_Log.info('received data from'+str(self.address)+'\n%s'%(msg));
+        Server_Log.info('received data from_{}_{}'.format(*self.address)+'\n%s'%(msg));
         self.procString(msg);
     
     #关闭连接
@@ -162,13 +162,14 @@ class EchoServer(asyncio.Protocol):
                     html = await response.text();
                     return html;
     
+    #处理client端口
     def handler_client(self , msg, task):
         try:
             TF = task.result();
             TF[0].write(at_msg.encode())
-            Server_Log.info('send to '+str(self.address)+'with AT message\n{}'.format(msg));
+            Server_Log.info('send to _{}_{}'.format(*self.address)+' with AT message\n{}'.format(msg));
             TF[0].close();
-        except:
+        except Exception:
             Server_Log.error('Error connection');
     
     #处理html文件
@@ -183,13 +184,13 @@ class EchoServer(asyncio.Protocol):
         ###########处理文件###########
         ###########发送文件###########
         self.transport.write(res.encode());
-        Server_Log.info('send to '+str(self.address)+'with json message\n{}'.format(res));
+        Server_Log.info('send to _{}_{}'.format(*self.address)+'with json message\n{}'.format(res));
         self.transport.close();
         ###########发送文件###########
 
     #处理错误
     def errorhandler(self, msg):
-        Server_Log.error("Error at "+str(self.address)+'Because error format:\n{}'.format(msg));
+        Server_Log.error('Error at _{}_{}'.format(*self.address)+'Because error format:\n{}'.format(msg));
         self.transport.write(('? '+msg).encode());
         self.transport.close();
         return;
