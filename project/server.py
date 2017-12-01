@@ -168,7 +168,7 @@ class EchoServer(asyncio.Protocol):
             Server_Log.info('send to '+str(self.address)+'with AT message\n{}'.format(msg));
             TF[0].close();
         except:
-            Server_Log.error('Error connection'');
+            Server_Log.error('Error connection');
             print("Error connection");
     
     #处理html文件
