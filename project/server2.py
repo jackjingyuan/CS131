@@ -8,11 +8,11 @@ request_tokens = ["https://maps.googleapis.com/maps/api/place/search/json?locati
 "&key=AIzaSyBPBQr0gNpjRp97a_rotWd-lJHjut1Pp9o"]
 
 srv_addr_port = {
-    'Alford':('localhost', 9068),
-    'Hamilton':('localhost', 9751),
-    'Holiday':('localhost', 9733),
-    'Ball':('localhost', 9734),
-    'Welsh':('localhost', 9735)
+    'Alford':('localhost', 10000),
+    'Hamilton':('localhost', 10001),
+    'Holiday':('localhost', 10002),
+    'Ball':('localhost', 10003),
+    'Welsh':('localhost', 10004)
 }
 
 
