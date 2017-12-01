@@ -150,7 +150,7 @@ class EchoServer(asyncio.Protocol):
             index=coord_str.find('-', 1);
         else:
             index=coord_str.find('+', 1);
-        return (coord_str[:i], coord_str[i:]);
+        return (coord_str[:index], coord_str[index:]);
     
     #获取html文件
     async def get_html(self, url):
