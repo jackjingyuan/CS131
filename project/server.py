@@ -186,7 +186,7 @@ class EchoServer(asyncio.Protocol):
     
     #处理message
     def procString(self, msg):
-        temp=filter(None,msg.split(' '));
+        temp=list(filter(None,msg.split(' ')));
         if temp[0]=='IAMAT':
             self.proc_IAMAT(msg);#line: 193
         elif temp[0]=='AT':
@@ -199,7 +199,7 @@ class EchoServer(asyncio.Protocol):
     #处理指令IAMAT
     def proc_IAMAT(self, msg):
         ##############查看合法性##############
-        split_msg=filter(None,msg.split(' '));
+        split_msg=list(filter(None,msg.split(' ')));
         if len(split_msg) !=4:
             self.errorhandler(msg);
             return;
@@ -231,7 +231,7 @@ class EchoServer(asyncio.Protocol):
     #AT[0] Alford[1] +0.263873386[2] kiwi.cs.ucla.edu[3] +34.068930-118.445127[4] 1479413884.392014450[5]
     def proc_AT(self, msg):
         ##############查看合法性##############
-        split_msg=filter(None,msg.split(' '));
+        split_msg=list(filter(None,msg.split(' ')));
         if len(spilt_msg)!=6:
             self.errorhandler(msg);
             return;
@@ -278,7 +278,7 @@ class EchoServer(asyncio.Protocol):
     #WHATSAT[0] kiwi.cs.ucla.edu[1] 10[2] 5[3]
     def proc_WHATSAT(self, msg):
         ##############查看合法性##############
-        split_msg=filter(None,msg.split(' '));
+        split_msg=list(filter(None,msg.split(' ')));
         if len(split_msg)!=4:
             self.errorhandler(msg);
             return;
