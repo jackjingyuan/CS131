@@ -232,7 +232,7 @@ class EchoServer(asyncio.Protocol):
     def proc_AT(self, msg):
         ##############查看合法性##############
         split_msg=list(filter(None,msg.split(' ')));
-        if len(spilt_msg)!=6:
+        if len(split_msg)!=6:
             self.errorhandler(msg);
             return;
         
