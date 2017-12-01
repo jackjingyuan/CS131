@@ -65,7 +65,7 @@ class EchoClient(asyncio.Protocol):
 
         #发送信息
         transport.write(self.message.encode());
-        Server_Log.info('As Client: sending {!r}'.format(self.message));
+        Server_Log.info('As Client: sending \n{!r}'.format(self.message));
         self.transport.close();
 
         #最后发送eof
@@ -74,7 +74,7 @@ class EchoClient(asyncio.Protocol):
     
     #作为客户端 受到信息
     def data_received(self, data):
-        Server_Log.info('As Client: received {!r}'.format(data))
+        Server_Log.info('As Client: received \n{!r}'.format(data))
 
     #收到EOF
     def eof_received(self):
@@ -262,11 +262,12 @@ class EchoServer(asyncio.Protocol):
         time=float(split_msg[5]);
         #############抽取字符变量#############
         #判断是否在client的data_base若不存在查看创建时间->
-        if not client in self.clients_dict or time>self.clients_dict[client][1]:
+        if (client in self.clients_dict and time>self.clients_dict[client][1]) or (not client in self.clients_dict):
             #->放入本服务器的client的data_base->
             self.clients_dict[client]=(coords, time, msg);
             #->通过Client和其它服务器交换数据
-            for server_name in Server_Connect[self.name]:
+            target=Server_Connect[self.name];
+            for server_name in target:
                 client_completed = asyncio.Future()
                 try:
                     Server_Log.info("init client to tranfer message");
