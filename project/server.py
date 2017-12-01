@@ -187,7 +187,7 @@ class EchoServer(asyncio.Protocol):
         ###########发送文件###########
 
     #处理错误
-    def __errorhandler(self, msg):
+    def errorhandler(self, msg):
         Server_Log.error("Error at "+str(self.address)+'Because error format:\n{}'.format(msg));
         self.transport.write(('? '+'msg').endcode());
         self.transport.close();
