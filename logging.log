@@ -1,0 +1,8 @@
+2017-11-30 23:03:09,470 - simple_example - INFO - info message
+2017-11-30 23:03:09,470 - simple_example - WARNING - warn message
+2017-11-30 23:03:09,470 - simple_example - ERROR - error message
+2017-11-30 23:03:09,470 - simple_example - CRITICAL - critical message
+2017-11-30 23:44:26,088 - simple_example - INFO - info message
+2017-11-30 23:44:26,088 - simple_example - WARNING - warn message
+2017-11-30 23:44:26,088 - simple_example - ERROR - error message
+2017-11-30 23:44:26,088 - simple_example - CRITICAL - critical message

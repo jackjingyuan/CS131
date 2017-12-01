@@ -1,0 +1,22 @@
+$ asyncio_echo_server_protocol.py
+asyncio: Using selector: KqueueSelector
+main: starting up on localhost port 10000
+EchoServer_::1_56353: connection accepted
+EchoServer_::1_56353: received b'This is the message. It will be sent in parts.'
+EchoServer_::1_56353: sent b'This is the message. It will be sent in parts.'
+EchoServer_::1_56353: received EOF
+EchoServer_::1_56353: closing
+
+EchoServer_::1_56354: connection accepted
+EchoServer_::1_56354: received b'This is the message. It will be sent in parts.'
+EchoServer_::1_56354: sent b'This is the message. It will be sent in parts.'
+EchoServer_::1_56354: received EOF
+EchoServer_::1_56354: closing
+
+EchoServer_::1_56355: connection accepted
+EchoServer_::1_56355: received b'This is the message. It will be sent '
+EchoServer_::1_56355: sent b'This is the message. It will be sent '
+EchoServer_::1_56355: received b'in parts.'
+EchoServer_::1_56355: sent b'in parts.'
+EchoServer_::1_56355: received EOF
+EchoServer_::1_56355: closing
