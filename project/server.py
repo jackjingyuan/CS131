@@ -299,7 +299,7 @@ class EchoServer(asyncio.Protocol):
             return;
         ####查看client是否在client的data_base中####
         radius=int(split_msg[2])*1000;
-        items_num=int(spilt_msg[3]);
+        items_num=int(split_msg[3]);
         coords=self.coord_to_tuple(self.clients_dict[client][0], msg);
         At_msg=self.clients_dict[client][2];
         url_link=Url_Address[0]+coords[0]+Url_Address[1]+coords[1]+Url_Address[2]+str(radius)+Url_Address[3];
