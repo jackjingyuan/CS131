@@ -64,7 +64,7 @@ class EchoClient(asyncio.Protocol):
         Server_Log.info('As Client: connectiong to '+str(self.address));
 
         #发送信息
-        transport.write(self.message);
+        transport.write(self.message.encode());
         Server_Log.info('As Client: sending {!r}'.format(self.message));
 
         #最后发送eof
@@ -169,7 +169,6 @@ class EchoServer(asyncio.Protocol):
             TF[0].close();
         except:
             Server_Log.error('Error connection');
-            print("Error connection");
     
     #处理html文件
     def handler_html(self, items, task):        
@@ -267,15 +266,14 @@ class EchoServer(asyncio.Protocol):
             #->通过Client和其它服务器交换数据
             for server_name in Server_Connect[self.name]:
                 client_completed = asyncio.Future()
-                client_factory = partial(
-                    EchoClient,
-                    messages=msg,
-                    future=client_completed
-                )
-                Server_Log.info("init client to tranfer message");
                 try:
+                    Server_Log.info("init client to tranfer message");
                     factory_coroutine = event_loop.create_connection(
-                    client_factory,
+                    partial(
+                    EchoClient,
+                    message=msg,
+                    future=client_completed
+                ),
                     *Server_Address[server_name]
                     )
                     task=event_loop.create_task(factory_coroutine);
