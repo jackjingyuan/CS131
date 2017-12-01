@@ -261,7 +261,7 @@ class EchoServer(asyncio.Protocol):
         time=float(split_msg[5]);
         #############抽取字符变量#############
         #判断是否在client的data_base若不存在查看创建时间->
-        if not client in self.clients_dict or time>self.clients_dict[client][2]:
+        if not client in self.clients_dict or time>self.clients_dict[client][1]:
             #->放入本服务器的client的data_base->
             self.clients_dict[client]=(coords, time, msg);
             #->通过Client和其它服务器交换数据
