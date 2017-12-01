@@ -314,7 +314,7 @@ class EchoServer(asyncio.Protocol):
 
 
 #程序入口
-factory=event_loop.create_server(partial(EchoClient, name), *Server_Address[name]);
+factory=event_loop.create_server(partial(EchoServer, name), *Server_Address[name]);
 server=event_loop.run_until_complete(factory);
 Server_Log.info('starting up on {} port {}'.format(*Server_Address[name]));
 
