@@ -161,14 +161,15 @@ class EchoServer(asyncio.Protocol):
                     html = await response.text();
                     return html;
     
-    def handler_client(self , at_msg, task):
+    def handler_client(self , msg, task):
         try:
-            resul = task.result();
-            resul[0].write(at_msg.encode())
-            Server_Log.info('send to '+str(self.address)+'with AT message\n{}'.format{at_msg});
-            resul[0].close()
+            TF = task.result();
+            TF[0].write(at_msg.encode())
+            Server_Log.info('send to '+str(self.address)+'with AT message\n{}'.format(msg));
+            TF[0].close();
         except:
-            print("Error connecting!")
+            Server_Log.error('Error connection'');
+            print("Error connection");
     
     #处理html文件
     def handler_html(self, items, task):        
