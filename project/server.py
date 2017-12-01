@@ -66,6 +66,7 @@ class EchoClient(asyncio.Protocol):
         #发送信息
         transport.write(self.message.encode());
         Server_Log.info('As Client: sending {!r}'.format(self.message));
+        self.transport.close();
 
         #最后发送eof
         if transport.can_write_eof():

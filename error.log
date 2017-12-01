@@ -1,70 +1,36 @@
-2017-12-01 19:10:24,898 - asyncio - DEBUG - Using selector: EpollSelector
-2017-12-01 19:10:24,904 - Server:Alford - INFO - starting up on localhost port 10000
-2017-12-01 19:10:29,115 - Server:Alford - INFO - connection accpted from ('::1', 53748, 0, 0)
-2017-12-01 19:10:29,116 - Server:Alford - INFO - received data from('::1', 53748, 0, 0)
-IAMAT kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 19:10:29,116 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 19:10:29,117 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 19:10:29,119 - asyncio - ERROR - Task exception was never retrieved
-future: <Task finished coro=<create_connection() done, defined at /usr/lib/python3.5/asyncio/base_events.py:598> exception=OSError("Multiple exceptions: [Errno 111] Connect call failed ('::1', 10001), [Errno 111] Connect call failed ('127.0.0.1', 10001)",)>
-Traceback (most recent call last):
-  File "/usr/lib/python3.5/asyncio/base_events.py", line 682, in create_connection
-    yield from self.sock_connect(sock, address)
-  File "/usr/lib/python3.5/asyncio/selector_events.py", line 402, in sock_connect
-    return (yield from fut)
-  File "/usr/lib/python3.5/asyncio/futures.py", line 361, in __iter__
-    yield self  # This tells Task to wait for completion.
-  File "/usr/lib/python3.5/asyncio/tasks.py", line 296, in _wakeup
-    future.result()
-  File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
-    raise self._exception
-  File "/usr/lib/python3.5/asyncio/selector_events.py", line 432, in _sock_connect_cb
-    raise OSError(err, 'Connect call failed %s' % (address,))
-ConnectionRefusedError: [Errno 111] Connect call failed ('127.0.0.1', 10001)
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/lib/python3.5/asyncio/tasks.py", line 241, in _step
-    result = coro.throw(exc)
-  File "/usr/lib/python3.5/asyncio/base_events.py", line 704, in create_connection
-    ', '.join(str(exc) for exc in exceptions)))
-OSError: Multiple exceptions: [Errno 111] Connect call failed ('::1', 10001), [Errno 111] Connect call failed ('127.0.0.1', 10001)
-2017-12-01 19:10:29,122 - asyncio - ERROR - Task exception was never retrieved
-future: <Task finished coro=<create_connection() done, defined at /usr/lib/python3.5/asyncio/base_events.py:598> exception=OSError("Multiple exceptions: [Errno 111] Connect call failed ('::1', 10004), [Errno 111] Connect call failed ('127.0.0.1', 10004)",)>
-Traceback (most recent call last):
-  File "/usr/lib/python3.5/asyncio/base_events.py", line 682, in create_connection
-    yield from self.sock_connect(sock, address)
-  File "/usr/lib/python3.5/asyncio/selector_events.py", line 402, in sock_connect
-    return (yield from fut)
-  File "/usr/lib/python3.5/asyncio/futures.py", line 361, in __iter__
-    yield self  # This tells Task to wait for completion.
-  File "/usr/lib/python3.5/asyncio/tasks.py", line 296, in _wakeup
-    future.result()
-  File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
-    raise self._exception
-  File "/usr/lib/python3.5/asyncio/selector_events.py", line 432, in _sock_connect_cb
-    raise OSError(err, 'Connect call failed %s' % (address,))
-ConnectionRefusedError: [Errno 111] Connect call failed ('127.0.0.1', 10004)
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/lib/python3.5/asyncio/tasks.py", line 241, in _step
-    result = coro.throw(exc)
-  File "/usr/lib/python3.5/asyncio/base_events.py", line 704, in create_connection
-    ', '.join(str(exc) for exc in exceptions)))
-OSError: Multiple exceptions: [Errno 111] Connect call failed ('::1', 10004), [Errno 111] Connect call failed ('127.0.0.1', 10004)
-2017-12-01 19:10:29,123 - Server:Alford - INFO - received data from('::1', 53748, 0, 0)
-WHATSAT kiwi.cs.ucla.edu 10 5
-2017-12-01 19:10:29,124 - Server:Alford - INFO - send to ('::1', 53748, 0, 0)with AT message
-AT Alford +32741544.724673748 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 19:10:29,191 - Server:Alford - INFO - send to ('::1', 53748, 0, 0)with json message
-{
-    "error_message": "This service requires an API key.",
-    "results": [],
-    "html_attributions": [],
-    "status": "REQUEST_DENIED"
-}
-
-2017-12-01 19:10:29,193 - Server:Alford - INFO - closing
+AT Alford +32744542.819746256 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
+2017-12-01 20:00:48,524 - Server:Alford - INFO - init client to tranfer message
+2017-12-01 20:00:48,524 - Server:Alford - INFO - init client to tranfer message
+2017-12-01 20:00:48,525 - Server:Alford - INFO - received EOF
+2017-12-01 20:00:48,526 - Server:Alford - INFO - closing
+2017-12-01 20:00:48,528 - Server:Alford - INFO - create client
+2017-12-01 20:00:48,528 - Server:Alford - INFO - create client
+2017-12-01 20:00:48,528 - Server:Alford - INFO - As Client: connectiong to ('::1', 10001, 0, 0)
+2017-12-01 20:00:48,532 - Server:Alford - INFO - As Client: sending 'AT Alford +32744542.819746256 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
+2017-12-01 20:00:48,532 - Server:Alford - INFO - As Client: connectiong to ('::1', 10004, 0, 0)
+2017-12-01 20:00:48,537 - Server:Alford - INFO - As Client: sending 'AT Alford +32744542.819746256 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
+2017-12-01 20:00:48,537 - Server:Alford - INFO - As Client: received EOF
+2017-12-01 20:00:48,539 - Server:Alford - ERROR - Error connection
+2017-12-01 20:00:48,539 - Server:Alford - ERROR - Error connection
+2017-12-01 20:00:48,539 - Server:Alford - INFO - As Client: received EOF
+2017-12-01 20:00:48,539 - Server:Alford - INFO - connection accpted from ('::1', 39772, 0, 0)
+2017-12-01 20:00:48,540 - Server:Alford - INFO - connection accpted from ('::1', 39776, 0, 0)
+2017-12-01 20:00:48,540 - Server:Alford - INFO - received data from('::1', 39772, 0, 0)
+AT Alford +32744542.819746256 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
+2017-12-01 20:00:48,541 - Server:Alford - INFO - init client to tranfer message
+2017-12-01 20:00:48,541 - Server:Alford - INFO - init client to tranfer message
+2017-12-01 20:00:48,542 - Server:Alford - INFO - received EOF
+2017-12-01 20:00:48,543 - Server:Alford - INFO - closing
+2017-12-01 20:00:48,544 - Server:Alford - INFO - create client
+2017-12-01 20:00:48,545 - Server:Alford - INFO - create client
+2017-12-01 20:00:48,545 - Server:Alford - INFO - As Client: connectiong to ('::1', 10001, 0, 0)
+2017-12-01 20:00:48,549 - Server:Alford - INFO - As Client: sending 'AT Alford +32744542.819746256 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
+2017-12-01 20:00:48,549 - Server:Alford - INFO - As Client: connectiong to ('::1', 10004, 0, 0)
+2017-12-01 20:00:48,553 - Server:Alford - INFO - As Client: sending 'AT Alford +32744542.819746256 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
+2017-12-01 20:00:48,554 - Server:Alford - ERROR - Error connection
+2017-12-01 20:00:48,555 - Server:Alford - ERROR - Error connection
+2017-12-01 20:00:48,556 - Server:Alford - INFO - connection accpted from ('::1', 39786, 0, 0)
+2017-12-01 20:00:48,556 - Server:Alford - INFO - As Client: received EOF
+2017-12-01 20:00:48,556 - Server:Alford - INFO - As Client: received EOF
+2017-12-01 20:00:48,557 - Server:Alford - INFO - connection accpted from ('::1', 39790, 0, 0)
+2017-12-01 20:00:48,557 - Server:Alford - INFO - received data from('::1', 39786, 0, 0)
