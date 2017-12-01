@@ -36,7 +36,7 @@ class EchoClient(asyncio.Protocol):
         # 这里使用 transport.write() 是为了方便
         # 记录发送的每一行内容
         for msg in self.messages:
-            transport.write(msg)
+            transport.write(msg.encode())
             self.log.debug('sending {!r}'.format(msg))
 
         if transport.can_write_eof():
