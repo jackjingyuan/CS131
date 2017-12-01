@@ -95,19 +95,19 @@ class EchoServer(asyncio.Protocol):
     #构造函数
     def __init__(self, name):
         super().__init__()
-        self.__name=name;
+        self.name=name;
         self.clients_dict=dict();
     
     #接收到客户端连接请求
     def connection_made(self, transport):
-        self.__transport=transport;
-        self.__address=transport.get_extra_info('peername');
-        Server_Log.info('connection accpted from '+str(self.__address));
+        self.transport=transport;
+        self.address=transport.get_extra_info('peername');
+        Server_Log.info('connection accpted from '+str(self.address));
 
     #收到信息    
     def data_received(self, data):
         msg=data.decode();
-        Server_Log.info('received data from'+str(self.__address)+'\n%s'%(msg));
+        Server_Log.info('received data from'+str(self.address)+'\n%s'%(msg));
         self.procString(msg);
     
     #关闭连接
@@ -172,15 +172,15 @@ class EchoServer(asyncio.Protocol):
         ###########处理文件###########
         ###########发送文件###########
         self.transport.write(res.encode());
-        Server_Log.info('send to '+str(self.__address)+'with json message\n{}'.format(res));
+        Server_Log.info('send to '+str(self.address)+'with json message\n{}'.format(res));
         self.transport.close();
         ###########发送文件###########
 
     #处理错误
     def __errorhandler(self, msg):
-        Server_Log.error("Error at "+str(self.__address)+'Because error format:\n{}'.format(msg));
-        self.__transport.write(('? '+'msg').endcode());
-        self.__transport.close();
+        Server_Log.error("Error at "+str(self.address)+'Because error format:\n{}'.format(msg));
+        self.transport.write(('? '+'msg').endcode());
+        self.transport.close();
         return;
     
     
@@ -194,21 +194,21 @@ class EchoServer(asyncio.Protocol):
         elif temp[0]=='WHATSAT':
             self.proc_WHATSAT(msg);#line 272
         else:
-            self.__errorhandler(msg)
+            self.errorhandler(msg)
     
     #处理指令IAMAT
     def proc_IAMAT(self, msg):
         ##############查看合法性##############
         split_msg=filter(None,msg.split(' '));
         if len(split_msg) !=4:
-            self.__errorhandler(msg);
+            self.errorhandler(msg);
             return;
         
         try:
             self.check_coords(split_msg[2]);
             float(split_msg[3]);
         except ValueError:
-            self.__errorhandler(msg);
+            self.errorhandler(msg);
             return;
         ##############查看合法性##############
         ##############重造AT指令##############
@@ -220,10 +220,10 @@ class EchoServer(asyncio.Protocol):
         else:
             sign='-';
 
-        reponse="AT "+self.__name+" "+sign+str(cur_time-rece_time)+" "+" ".join(split_msg[1:]);
+        reponse="AT "+self.name+" "+sign+str(cur_time-rece_time)+" "+" ".join(split_msg[1:]);
         ##############重造AT指令##############
         ############发送/处理AT指令############
-        self.__transport.write(reponse.encode());
+        self.transport.write(reponse.encode());
         self.proc_AT(reponse);
         ############发送/处理AT指令############
     
@@ -233,7 +233,7 @@ class EchoServer(asyncio.Protocol):
         ##############查看合法性##############
         split_msg=filter(None,msg.split(' '));
         if len(spilt_msg)!=6:
-            self.__errorhandler(msg);
+            self.errorhandler(msg);
             return;
         
         try:
@@ -241,7 +241,7 @@ class EchoServer(asyncio.Protocol):
             float(split_msg[5]);
             self.check_coords(split_msg[4]);
         except ValueError:
-            self.__errorhandler(msg);
+            self.errorhandler(msg);
             return;
         ##############查看合法性##############
         #############抽取字符变量#############
@@ -254,7 +254,7 @@ class EchoServer(asyncio.Protocol):
             #->放入本服务器的client的data_base->
             self.clients_dict[client]=(coords, time, msg);
             #->通过Client和其它服务器交换数据
-            for server_name in Server_Connect[self.__name]:
+            for server_name in Server_Connect[self.name]:
                 client_completed = asyncio.Future()
                 client_factory = partial(
                     EchoClient,
@@ -280,7 +280,7 @@ class EchoServer(asyncio.Protocol):
         ##############查看合法性##############
         split_msg=filter(None,msg.split(' '));
         if len(split_msg)!=4:
-            self.__errorhandler(msg);
+            self.errorhandler(msg);
             return;
         
         try:
@@ -289,13 +289,13 @@ class EchoServer(asyncio.Protocol):
             if float(split_msg[3])>20:
                 raise ValueError;
         except ValueError:
-            self.__errorhandler(msg);
+            self.errorhandler(msg);
             return;
         ##############查看合法性##############
         ####查看client是否在client的data_base中####
         client=split_msg[1];
         if not client in self.clients_dict:
-            self.__errorhandler(msg);
+            self.errorhandler(msg);
             return;
         ####查看client是否在client的data_base中####
         radius=int(split_msg[2])*1000;
@@ -305,8 +305,8 @@ class EchoServer(asyncio.Protocol):
         url_link=Url_Address[0]+coords[0]+Url_Address[1]+coords[1]+Url_Address[2]+str(radius)+Url_Address[3];
         ##########抽取变量创建url链接##########
         ##########取得/处理html文件###########
-        Server_Log.info('send to '+str(self.__address)+'with AT message\n{}'.format(At_msg));
-        self.__transport.write(At_msg.encode());
+        Server_Log.info('send to '+str(self.address)+'with AT message\n{}'.format(At_msg));
+        self.transport.write(At_msg.encode());
         task=event_loop.create_task(self.get_html(url_link));
         task.add_done_callback(partial(handler_html, 2));
         ##########取得/处理html文件###########
