@@ -38,7 +38,7 @@ logging.basicConfig(
 Url_Address = ["https://maps.googleapis.com/maps/api/place/search/json?location=",
 ",",
 "&radius=",
-"&key=AIzaSyBPBQr0gNpjRp97a_rotWd-lJHjut1Pp9o"]
+"&AIzaSyB0xXtrdEjVUoDh4zQUGiA0WWNRtMe1A5w"]
 
 #设置log file
 Server_Log=logging.getLogger('Server:%s'%(name));
