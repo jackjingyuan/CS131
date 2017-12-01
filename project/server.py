@@ -38,7 +38,7 @@ logging.basicConfig(
 Url_Address = ["https://maps.googleapis.com/maps/api/place/search/json?location=",
 ",",
 "&radius=",
-"&AIzaSyB0xXtrdEjVUoDh4zQUGiA0WWNRtMe1A5w"]
+"&key=AIzaSyB0xXtrdEjVUoDh4zQUGiA0WWNRtMe1A5w"]
 
 #设置log file
 Server_Log=logging.getLogger('Server:%s'%(name));
@@ -123,6 +123,7 @@ class EchoServer(asyncio.Protocol):
         Server_Log.info('received EOF')
         if self.transport.can_write_eof():
             self.transport.write_eof()
+
     #检查坐标
     def check_coords(self, coord_str):
         ############检查0位############
@@ -159,6 +160,15 @@ class EchoServer(asyncio.Protocol):
                 async with session.get(url) as response:
                     html = await response.text();
                     return html;
+    
+    def handler_client(self , at_msg, task):
+        try:
+            resul = task.result();
+            resul[0].write(at_msg.encode())
+            Server_Log.info('send to '+str(self.address)+'with AT message\n{}'.format{at_msg});
+            resul[0].close()
+        except:
+            print("Error connecting!")
     
     #处理html文件
     def handler_html(self, items, task):        
@@ -268,6 +278,7 @@ class EchoServer(asyncio.Protocol):
                     *Server_Address[server_name]
                     )
                     task=event_loop.create_task(factory_coroutine);
+                    task.add_done_callback(partial(self.handler_client, msg))
                 except Exception:
                     Server_Log.error("Issue connection with serve");
                 #通过Client和其它服务器交换数据<-
