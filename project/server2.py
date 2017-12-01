@@ -2,8 +2,10 @@
 
 
 
-request_tokens = ["https://maps.googleapis.com/maps/api/place/search/json?location=", ",", "&radius=",
-                  "&key=AIzaSyAUDSl76V_s3LNF3sp80E70R7ZR-2Bn-Ws"]
+request_tokens = ["https://maps.googleapis.com/maps/api/place/search/json?location=",
+",",
+"&radius=",
+"&key=AIzaSyBPBQr0gNpjRp97a_rotWd-lJHjut1Pp9o"]
 
 srv_addr_port = {
     'Alford':('localhost', 9068),
