@@ -39,8 +39,6 @@ class EchoClient(asyncio.Protocol):
             transport.write(msg.encode())
             self.log.debug('sending {!r}'.format(msg))
 
-        if transport.can_write_eof():
-            transport.write_eof()
 
     def data_received(self, data):
         self.log.debug('received {!r}'.format(data))
