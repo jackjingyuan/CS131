@@ -115,12 +115,12 @@ class EchoServer(asyncio.Protocol):
         if error:
             Server_Log.error('error:{}'.format(error));
         else:
-            self.log.info('closing');
+            Server_Log.info('closing');
         super().connection_lost(error);
     
     #接受EOF文件
     def eof_received(self):
-        self.log.debug('received EOF')
+        Server_Log.info('received EOF')
         if self.transport.can_write_eof():
             self.transport.write_eof()
     #检查坐标
