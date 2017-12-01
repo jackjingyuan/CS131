@@ -1,13 +1,11 @@
-# asyncio_echo_client_protocol.py
 import asyncio
 import functools
 import logging
 import sys
 
 MESSAGES = [
-    b'This is the message. ',
-    b'It will be sent ',
-    b'in parts.',
+    'IAMAT kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450',
+    'WHATSAT kiwi.cs.ucla.edu 10 5'
 ]
 SERVER_ADDRESS = ('localhost', 10000)
 
