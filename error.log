@@ -1,686 +1,112 @@
-2017-12-01 20:59:24,753 - asyncio - DEBUG - Using selector: EpollSelector
-2017-12-01 20:59:24,760 - Server:Alford - INFO - starting up on localhost port 10000
-2017-12-01 20:59:29,511 - Server:Alford - INFO - connection accpted from_::1_40446
-2017-12-01 20:59:29,512 - Server:Alford - INFO - received data from_::1_40446
+2017-12-01 21:29:39,588 - asyncio - DEBUG - Using selector: EpollSelector
+2017-12-01 21:29:39,595 - Server:Alford - INFO - starting up on localhost port 10000
+2017-12-01 21:29:49,964 - Server:Alford - INFO - connection accpted from_::1_41034
+2017-12-01 21:29:49,966 - Server:Alford - INFO - received data from_::1_41034
 IAMAT kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:29,513 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,513 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,518 - Server:Alford - INFO - received data from_::1_40446
+2017-12-01 21:29:49,966 - Server:Alford - INFO - init client to tranfer message
+2017-12-01 21:29:49,967 - Server:Alford - INFO - init client to tranfer message
+2017-12-01 21:29:49,969 - Server:Alford - INFO - received data from_::1_41034
 WHATSAT kiwi.cs.ucla.edu 10 5
-2017-12-01 20:59:29,519 - Server:Alford - INFO - send to ('::1', 40446, 0, 0)with AT message
-AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:29,521 - Server:Alford - INFO - create client
-2017-12-01 20:59:29,523 - Server:Alford - INFO - As Client: connectiong to _::1_10004
-2017-12-01 20:59:29,527 - Server:Alford - INFO - As Client: sending 'AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
-2017-12-01 20:59:29,528 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,529 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,529 - Server:Alford - INFO - connection accpted from_::1_40454
-2017-12-01 20:59:29,530 - Server:Alford - INFO - received data from_::1_40454
-AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:29,531 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,531 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,533 - Server:Alford - INFO - received EOF
-2017-12-01 20:59:29,534 - Server:Alford - INFO - closing
-2017-12-01 20:59:29,536 - Server:Alford - INFO - create client
-2017-12-01 20:59:29,537 - Server:Alford - INFO - As Client: connectiong to _::1_10004
-2017-12-01 20:59:29,541 - Server:Alford - INFO - As Client: sending 'AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
-2017-12-01 20:59:29,541 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,542 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,543 - Server:Alford - INFO - connection accpted from_::1_40468
-2017-12-01 20:59:29,543 - Server:Alford - INFO - received data from_::1_40468
-AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:29,544 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,544 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,546 - Server:Alford - INFO - received EOF
-2017-12-01 20:59:29,546 - Server:Alford - INFO - closing
-2017-12-01 20:59:29,548 - Server:Alford - INFO - create client
-2017-12-01 20:59:29,548 - Server:Alford - INFO - As Client: connectiong to _::1_10004
-2017-12-01 20:59:29,551 - Server:Alford - INFO - As Client: sending 'AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
-2017-12-01 20:59:29,552 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,553 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,553 - Server:Alford - INFO - connection accpted from_::1_40480
-2017-12-01 20:59:29,554 - Server:Alford - INFO - received data from_::1_40480
-AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:29,554 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,555 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,556 - Server:Alford - INFO - received EOF
-2017-12-01 20:59:29,557 - Server:Alford - INFO - closing
-2017-12-01 20:59:29,558 - Server:Alford - INFO - create client
-2017-12-01 20:59:29,559 - Server:Alford - INFO - As Client: connectiong to _::1_10004
-2017-12-01 20:59:29,561 - Server:Alford - INFO - As Client: sending 'AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
-2017-12-01 20:59:29,563 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,566 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,566 - Server:Alford - INFO - connection accpted from_::1_40492
-2017-12-01 20:59:29,567 - Server:Alford - INFO - received data from_::1_40492
-AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:29,567 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,568 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,569 - Server:Alford - INFO - received EOF
-2017-12-01 20:59:29,569 - Server:Alford - INFO - closing
-2017-12-01 20:59:29,571 - Server:Alford - INFO - create client
-2017-12-01 20:59:29,571 - Server:Alford - INFO - As Client: connectiong to _::1_10004
-2017-12-01 20:59:29,575 - Server:Alford - INFO - As Client: sending 'AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
-2017-12-01 20:59:29,576 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,576 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,577 - Server:Alford - INFO - connection accpted from_::1_40504
-2017-12-01 20:59:29,578 - Server:Alford - INFO - received data from_::1_40504
-AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:29,579 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,579 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,580 - Server:Alford - INFO - received EOF
-2017-12-01 20:59:29,580 - Server:Alford - INFO - closing
-2017-12-01 20:59:29,582 - Server:Alford - INFO - create client
-2017-12-01 20:59:29,582 - Server:Alford - INFO - As Client: connectiong to _::1_10004
-2017-12-01 20:59:29,586 - Server:Alford - INFO - As Client: sending 'AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
-2017-12-01 20:59:29,587 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,588 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,589 - Server:Alford - INFO - connection accpted from_::1_40516
-2017-12-01 20:59:29,590 - Server:Alford - INFO - received data from_::1_40516
-AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:29,591 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,591 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,593 - Server:Alford - INFO - received EOF
-2017-12-01 20:59:29,594 - Server:Alford - INFO - closing
-2017-12-01 20:59:29,595 - Server:Alford - INFO - create client
-2017-12-01 20:59:29,595 - Server:Alford - INFO - As Client: connectiong to _::1_10004
-2017-12-01 20:59:29,598 - Server:Alford - INFO - As Client: sending 'AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
-2017-12-01 20:59:29,600 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,601 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,601 - Server:Alford - INFO - connection accpted from_::1_40528
-2017-12-01 20:59:29,603 - Server:Alford - INFO - received data from_::1_40528
-AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:29,604 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,604 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,607 - Server:Alford - INFO - received EOF
-2017-12-01 20:59:29,607 - Server:Alford - INFO - closing
-2017-12-01 20:59:29,609 - Server:Alford - INFO - create client
-2017-12-01 20:59:29,610 - Server:Alford - INFO - As Client: connectiong to _::1_10004
-2017-12-01 20:59:29,613 - Server:Alford - INFO - As Client: sending 'AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
-2017-12-01 20:59:29,613 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,615 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,615 - Server:Alford - INFO - connection accpted from_::1_40540
-2017-12-01 20:59:29,616 - Server:Alford - INFO - received data from_::1_40540
-AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:29,618 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,618 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,619 - Server:Alford - INFO - received EOF
-2017-12-01 20:59:29,620 - Server:Alford - INFO - closing
-2017-12-01 20:59:29,622 - Server:Alford - INFO - create client
-2017-12-01 20:59:29,622 - Server:Alford - INFO - As Client: connectiong to _::1_10004
-2017-12-01 20:59:29,625 - Server:Alford - INFO - As Client: sending 'AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
-2017-12-01 20:59:29,625 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,626 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,627 - Server:Alford - INFO - connection accpted from_::1_40552
-2017-12-01 20:59:29,627 - Server:Alford - INFO - received data from_::1_40552
-AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:29,628 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,628 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,629 - Server:Alford - INFO - received EOF
-2017-12-01 20:59:29,629 - Server:Alford - INFO - closing
-2017-12-01 20:59:29,631 - Server:Alford - INFO - create client
-2017-12-01 20:59:29,631 - Server:Alford - INFO - As Client: connectiong to _::1_10004
-2017-12-01 20:59:29,633 - Server:Alford - INFO - As Client: sending 'AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
-2017-12-01 20:59:29,634 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,635 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,635 - Server:Alford - INFO - connection accpted from_::1_40564
-2017-12-01 20:59:29,636 - Server:Alford - INFO - received data from_::1_40564
-AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:29,636 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,637 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,638 - Server:Alford - INFO - received EOF
-2017-12-01 20:59:29,638 - Server:Alford - INFO - closing
-2017-12-01 20:59:29,639 - Server:Alford - INFO - create client
-2017-12-01 20:59:29,640 - Server:Alford - INFO - As Client: connectiong to _::1_10004
-2017-12-01 20:59:29,642 - Server:Alford - INFO - As Client: sending 'AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
-2017-12-01 20:59:29,644 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,644 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,645 - Server:Alford - INFO - connection accpted from_::1_40576
-2017-12-01 20:59:29,645 - Server:Alford - INFO - received data from_::1_40576
-AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:29,645 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,646 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,646 - Server:Alford - INFO - received EOF
-2017-12-01 20:59:29,647 - Server:Alford - INFO - closing
-2017-12-01 20:59:29,648 - Server:Alford - INFO - create client
-2017-12-01 20:59:29,648 - Server:Alford - INFO - As Client: connectiong to _::1_10004
-2017-12-01 20:59:29,651 - Server:Alford - INFO - As Client: sending 'AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
-2017-12-01 20:59:29,652 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,652 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,653 - Server:Alford - INFO - connection accpted from_::1_40588
-2017-12-01 20:59:29,653 - Server:Alford - INFO - received data from_::1_40588
-AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:29,654 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,654 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,655 - Server:Alford - INFO - received EOF
-2017-12-01 20:59:29,655 - Server:Alford - INFO - closing
-2017-12-01 20:59:29,656 - Server:Alford - INFO - create client
-2017-12-01 20:59:29,657 - Server:Alford - INFO - As Client: connectiong to _::1_10004
-2017-12-01 20:59:29,660 - Server:Alford - INFO - As Client: sending 'AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
-2017-12-01 20:59:29,660 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,661 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,662 - Server:Alford - INFO - connection accpted from_::1_40600
-2017-12-01 20:59:29,662 - Server:Alford - INFO - received data from_::1_40600
-AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:29,663 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,663 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,664 - Server:Alford - INFO - received EOF
-2017-12-01 20:59:29,665 - Server:Alford - INFO - closing
-2017-12-01 20:59:29,666 - Server:Alford - INFO - create client
-2017-12-01 20:59:29,666 - Server:Alford - INFO - As Client: connectiong to _::1_10004
-2017-12-01 20:59:29,669 - Server:Alford - INFO - As Client: sending 'AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
-2017-12-01 20:59:29,670 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,671 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,672 - Server:Alford - INFO - connection accpted from_::1_40612
-2017-12-01 20:59:29,672 - Server:Alford - INFO - received data from_::1_40612
-AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:29,673 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,673 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,674 - Server:Alford - INFO - received EOF
-2017-12-01 20:59:29,675 - Server:Alford - INFO - closing
-2017-12-01 20:59:29,676 - Server:Alford - INFO - create client
-2017-12-01 20:59:29,677 - Server:Alford - INFO - As Client: connectiong to _::1_10004
-2017-12-01 20:59:29,680 - Server:Alford - INFO - As Client: sending 'AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
-2017-12-01 20:59:29,680 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,681 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,682 - Server:Alford - INFO - connection accpted from_::1_40624
-2017-12-01 20:59:29,682 - Server:Alford - INFO - received data from_::1_40624
-AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:29,683 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,683 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,684 - Server:Alford - INFO - received EOF
-2017-12-01 20:59:29,685 - Server:Alford - INFO - closing
-2017-12-01 20:59:29,686 - Server:Alford - INFO - create client
-2017-12-01 20:59:29,686 - Server:Alford - INFO - As Client: connectiong to _::1_10004
-2017-12-01 20:59:29,689 - Server:Alford - INFO - As Client: sending 'AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
-2017-12-01 20:59:29,690 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,690 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,691 - Server:Alford - INFO - connection accpted from_::1_40636
-2017-12-01 20:59:29,692 - Server:Alford - INFO - received data from_::1_40636
-AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:29,692 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,692 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,693 - Server:Alford - INFO - received EOF
-2017-12-01 20:59:29,694 - Server:Alford - INFO - closing
-2017-12-01 20:59:29,695 - Server:Alford - INFO - create client
-2017-12-01 20:59:29,695 - Server:Alford - INFO - As Client: connectiong to _::1_10004
-2017-12-01 20:59:29,697 - Server:Alford - INFO - As Client: sending 'AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
-2017-12-01 20:59:29,699 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,699 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,700 - Server:Alford - INFO - connection accpted from_::1_40648
-2017-12-01 20:59:29,700 - Server:Alford - INFO - received data from_::1_40648
-AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:29,701 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,701 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,702 - Server:Alford - INFO - received EOF
-2017-12-01 20:59:29,703 - Server:Alford - INFO - closing
-2017-12-01 20:59:29,704 - Server:Alford - INFO - create client
-2017-12-01 20:59:29,705 - Server:Alford - INFO - As Client: connectiong to _::1_10004
-2017-12-01 20:59:29,707 - Server:Alford - INFO - As Client: sending 'AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
-2017-12-01 20:59:29,708 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,709 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,709 - Server:Alford - INFO - connection accpted from_::1_40660
-2017-12-01 20:59:29,710 - Server:Alford - INFO - received data from_::1_40660
-AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:29,711 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,711 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,712 - Server:Alford - INFO - received EOF
-2017-12-01 20:59:29,713 - Server:Alford - INFO - closing
-2017-12-01 20:59:29,714 - Server:Alford - INFO - create client
-2017-12-01 20:59:29,715 - Server:Alford - INFO - As Client: connectiong to _::1_10004
-2017-12-01 20:59:29,717 - Server:Alford - INFO - As Client: sending 'AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
-2017-12-01 20:59:29,718 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,719 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,719 - Server:Alford - INFO - connection accpted from_::1_40672
-2017-12-01 20:59:29,720 - Server:Alford - INFO - received data from_::1_40672
-AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:29,721 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,721 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,722 - Server:Alford - INFO - received EOF
-2017-12-01 20:59:29,723 - Server:Alford - INFO - closing
-2017-12-01 20:59:29,724 - Server:Alford - INFO - create client
-2017-12-01 20:59:29,725 - Server:Alford - INFO - As Client: connectiong to _::1_10004
-2017-12-01 20:59:29,728 - Server:Alford - INFO - As Client: sending 'AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
-2017-12-01 20:59:29,729 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,729 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,730 - Server:Alford - INFO - connection accpted from_::1_40684
-2017-12-01 20:59:29,731 - Server:Alford - INFO - received data from_::1_40684
-AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:29,731 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,732 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,733 - Server:Alford - INFO - received EOF
-2017-12-01 20:59:29,733 - Server:Alford - INFO - closing
-2017-12-01 20:59:29,735 - Server:Alford - INFO - create client
-2017-12-01 20:59:29,735 - Server:Alford - INFO - As Client: connectiong to _::1_10004
-2017-12-01 20:59:29,737 - Server:Alford - INFO - As Client: sending 'AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
-2017-12-01 20:59:29,738 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,739 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,740 - Server:Alford - INFO - connection accpted from_::1_40696
-2017-12-01 20:59:29,741 - Server:Alford - INFO - received data from_::1_40696
-AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:29,741 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,742 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,743 - Server:Alford - INFO - received EOF
-2017-12-01 20:59:29,743 - Server:Alford - INFO - closing
-2017-12-01 20:59:29,745 - Server:Alford - INFO - create client
-2017-12-01 20:59:29,745 - Server:Alford - INFO - As Client: connectiong to _::1_10004
-2017-12-01 20:59:29,747 - Server:Alford - INFO - As Client: sending 'AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
-2017-12-01 20:59:29,748 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,749 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,750 - Server:Alford - INFO - connection accpted from_::1_40708
-2017-12-01 20:59:29,750 - Server:Alford - INFO - received data from_::1_40708
-AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:29,751 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,751 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,753 - Server:Alford - INFO - received EOF
-2017-12-01 20:59:29,753 - Server:Alford - INFO - closing
-2017-12-01 20:59:29,755 - Server:Alford - INFO - create client
-2017-12-01 20:59:29,755 - Server:Alford - INFO - As Client: connectiong to _::1_10004
-2017-12-01 20:59:29,758 - Server:Alford - INFO - As Client: sending 'AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
-2017-12-01 20:59:29,759 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,759 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,760 - Server:Alford - INFO - connection accpted from_::1_40720
-2017-12-01 20:59:29,761 - Server:Alford - INFO - received data from_::1_40720
-AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:29,761 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,762 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,763 - Server:Alford - INFO - received EOF
-2017-12-01 20:59:29,764 - Server:Alford - INFO - closing
-2017-12-01 20:59:29,765 - Server:Alford - INFO - create client
-2017-12-01 20:59:29,766 - Server:Alford - INFO - As Client: connectiong to _::1_10004
-2017-12-01 20:59:29,768 - Server:Alford - INFO - As Client: sending 'AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
-2017-12-01 20:59:29,769 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,770 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,770 - Server:Alford - INFO - connection accpted from_::1_40732
-2017-12-01 20:59:29,771 - Server:Alford - INFO - received data from_::1_40732
-AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:29,772 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,772 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,773 - Server:Alford - INFO - received EOF
-2017-12-01 20:59:29,774 - Server:Alford - INFO - closing
-2017-12-01 20:59:29,775 - Server:Alford - INFO - create client
-2017-12-01 20:59:29,775 - Server:Alford - INFO - As Client: connectiong to _::1_10004
-2017-12-01 20:59:29,778 - Server:Alford - INFO - As Client: sending 'AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
-2017-12-01 20:59:29,779 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,780 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,780 - Server:Alford - INFO - connection accpted from_::1_40744
-2017-12-01 20:59:29,781 - Server:Alford - INFO - received data from_::1_40744
-AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:29,782 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,782 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,783 - Server:Alford - INFO - received EOF
-2017-12-01 20:59:29,784 - Server:Alford - INFO - closing
-2017-12-01 20:59:29,785 - Server:Alford - INFO - create client
-2017-12-01 20:59:29,786 - Server:Alford - INFO - As Client: connectiong to _::1_10004
-2017-12-01 20:59:29,789 - Server:Alford - INFO - As Client: sending 'AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
-2017-12-01 20:59:29,789 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,790 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,790 - Server:Alford - INFO - connection accpted from_::1_40756
-2017-12-01 20:59:29,791 - Server:Alford - INFO - received data from_::1_40756
-AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:29,792 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,792 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,793 - Server:Alford - INFO - received EOF
-2017-12-01 20:59:29,794 - Server:Alford - INFO - closing
-2017-12-01 20:59:29,795 - Server:Alford - INFO - create client
-2017-12-01 20:59:29,796 - Server:Alford - INFO - As Client: connectiong to _::1_10004
-2017-12-01 20:59:29,798 - Server:Alford - INFO - As Client: sending 'AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
-2017-12-01 20:59:29,799 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,799 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,800 - Server:Alford - INFO - connection accpted from_::1_40768
-2017-12-01 20:59:29,801 - Server:Alford - INFO - received data from_::1_40768
-AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:29,801 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,802 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,803 - Server:Alford - INFO - received EOF
-2017-12-01 20:59:29,804 - Server:Alford - INFO - closing
-2017-12-01 20:59:29,806 - Server:Alford - INFO - create client
-2017-12-01 20:59:29,806 - Server:Alford - INFO - As Client: connectiong to _::1_10004
-2017-12-01 20:59:29,808 - Server:Alford - INFO - As Client: sending 'AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
-2017-12-01 20:59:29,809 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,810 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,810 - Server:Alford - INFO - connection accpted from_::1_40780
-2017-12-01 20:59:29,812 - Server:Alford - INFO - received data from_::1_40780
-AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:29,812 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,813 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,814 - Server:Alford - INFO - received EOF
-2017-12-01 20:59:29,815 - Server:Alford - INFO - closing
-2017-12-01 20:59:29,816 - Server:Alford - INFO - create client
-2017-12-01 20:59:29,816 - Server:Alford - INFO - As Client: connectiong to _::1_10004
-2017-12-01 20:59:29,819 - Server:Alford - INFO - As Client: sending 'AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
-2017-12-01 20:59:29,819 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,820 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,821 - Server:Alford - INFO - connection accpted from_::1_40792
-2017-12-01 20:59:29,821 - Server:Alford - INFO - received data from_::1_40792
-AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:29,822 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,823 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,824 - Server:Alford - INFO - received EOF
-2017-12-01 20:59:29,825 - Server:Alford - INFO - closing
-2017-12-01 20:59:29,826 - Server:Alford - INFO - create client
-2017-12-01 20:59:29,827 - Server:Alford - INFO - As Client: connectiong to _::1_10004
-2017-12-01 20:59:29,830 - Server:Alford - INFO - As Client: sending 'AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
-2017-12-01 20:59:29,830 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,831 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,832 - Server:Alford - INFO - connection accpted from_::1_40804
-2017-12-01 20:59:29,832 - Server:Alford - INFO - received data from_::1_40804
-AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:29,833 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,833 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,834 - Server:Alford - INFO - received EOF
-2017-12-01 20:59:29,835 - Server:Alford - INFO - closing
-2017-12-01 20:59:29,836 - Server:Alford - INFO - create client
-2017-12-01 20:59:29,836 - Server:Alford - INFO - As Client: connectiong to _::1_10004
-2017-12-01 20:59:29,839 - Server:Alford - INFO - As Client: sending 'AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
-2017-12-01 20:59:29,840 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,841 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,841 - Server:Alford - INFO - connection accpted from_::1_40816
-2017-12-01 20:59:29,842 - Server:Alford - INFO - received data from_::1_40816
-AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:29,843 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,843 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,844 - Server:Alford - INFO - received EOF
-2017-12-01 20:59:29,844 - Server:Alford - INFO - closing
-2017-12-01 20:59:29,846 - Server:Alford - INFO - create client
-2017-12-01 20:59:29,846 - Server:Alford - INFO - As Client: connectiong to _::1_10004
-2017-12-01 20:59:29,849 - Server:Alford - INFO - As Client: sending 'AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
-2017-12-01 20:59:29,850 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,851 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,851 - Server:Alford - INFO - connection accpted from_::1_40828
-2017-12-01 20:59:29,852 - Server:Alford - INFO - received data from_::1_40828
-AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:29,852 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,853 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,854 - Server:Alford - INFO - received EOF
-2017-12-01 20:59:29,854 - Server:Alford - INFO - closing
-2017-12-01 20:59:29,855 - Server:Alford - INFO - create client
-2017-12-01 20:59:29,856 - Server:Alford - INFO - As Client: connectiong to _::1_10004
-2017-12-01 20:59:29,858 - Server:Alford - INFO - As Client: sending 'AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
-2017-12-01 20:59:29,859 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,860 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,860 - Server:Alford - INFO - connection accpted from_::1_40840
-2017-12-01 20:59:29,861 - Server:Alford - INFO - received data from_::1_40840
-AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:29,862 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,862 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,863 - Server:Alford - INFO - received EOF
-2017-12-01 20:59:29,864 - Server:Alford - INFO - closing
-2017-12-01 20:59:29,865 - Server:Alford - INFO - create client
-2017-12-01 20:59:29,865 - Server:Alford - INFO - As Client: connectiong to _::1_10004
-2017-12-01 20:59:29,868 - Server:Alford - INFO - As Client: sending 'AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
-2017-12-01 20:59:29,868 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,869 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,870 - Server:Alford - INFO - connection accpted from_::1_40852
-2017-12-01 20:59:29,870 - Server:Alford - INFO - received data from_::1_40852
-AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:29,871 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,872 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,873 - Server:Alford - INFO - received EOF
-2017-12-01 20:59:29,873 - Server:Alford - INFO - closing
-2017-12-01 20:59:29,875 - Server:Alford - INFO - create client
-2017-12-01 20:59:29,875 - Server:Alford - INFO - As Client: connectiong to _::1_10004
-2017-12-01 20:59:29,878 - Server:Alford - INFO - As Client: sending 'AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
-2017-12-01 20:59:29,878 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,879 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,879 - Server:Alford - INFO - connection accpted from_::1_40864
-2017-12-01 20:59:29,880 - Server:Alford - INFO - received data from_::1_40864
-AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:29,881 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,881 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,882 - Server:Alford - INFO - received EOF
-2017-12-01 20:59:29,883 - Server:Alford - INFO - closing
-2017-12-01 20:59:29,885 - Server:Alford - INFO - create client
-2017-12-01 20:59:29,885 - Server:Alford - INFO - As Client: connectiong to _::1_10004
-2017-12-01 20:59:29,887 - Server:Alford - INFO - As Client: sending 'AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
-2017-12-01 20:59:29,888 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,889 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,890 - Server:Alford - INFO - connection accpted from_::1_40876
-2017-12-01 20:59:29,890 - Server:Alford - INFO - received data from_::1_40876
-AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:29,891 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,891 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,892 - Server:Alford - INFO - received EOF
-2017-12-01 20:59:29,893 - Server:Alford - INFO - closing
-2017-12-01 20:59:29,894 - Server:Alford - INFO - create client
-2017-12-01 20:59:29,895 - Server:Alford - INFO - As Client: connectiong to _::1_10004
-2017-12-01 20:59:29,895 - Server:Alford - INFO - As Client: sending 'AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
-2017-12-01 20:59:29,898 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,898 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,899 - Server:Alford - INFO - connection accpted from_::1_40888
-2017-12-01 20:59:29,900 - Server:Alford - INFO - received data from_::1_40888
-AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:29,900 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,901 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,902 - Server:Alford - INFO - received EOF
-2017-12-01 20:59:29,903 - Server:Alford - INFO - closing
-2017-12-01 20:59:29,905 - Server:Alford - INFO - create client
-2017-12-01 20:59:29,905 - Server:Alford - INFO - As Client: connectiong to _::1_10004
-2017-12-01 20:59:29,905 - Server:Alford - INFO - As Client: sending 'AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
-2017-12-01 20:59:29,908 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,908 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,908 - Server:Alford - INFO - connection accpted from_::1_40900
-2017-12-01 20:59:29,910 - Server:Alford - INFO - received data from_::1_40900
-AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:29,910 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,910 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,912 - Server:Alford - INFO - received EOF
-2017-12-01 20:59:29,913 - Server:Alford - INFO - closing
-2017-12-01 20:59:29,914 - Server:Alford - INFO - create client
-2017-12-01 20:59:29,915 - Server:Alford - INFO - As Client: connectiong to _::1_10004
-2017-12-01 20:59:29,917 - Server:Alford - INFO - As Client: sending 'AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
-2017-12-01 20:59:29,918 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,918 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,919 - Server:Alford - INFO - connection accpted from_::1_40912
-2017-12-01 20:59:29,919 - Server:Alford - INFO - received data from_::1_40912
-AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:29,920 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,920 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,921 - Server:Alford - INFO - received EOF
-2017-12-01 20:59:29,923 - Server:Alford - INFO - closing
-2017-12-01 20:59:29,923 - Server:Alford - INFO - create client
-2017-12-01 20:59:29,924 - Server:Alford - INFO - As Client: connectiong to _::1_10004
-2017-12-01 20:59:29,927 - Server:Alford - INFO - As Client: sending 'AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
-2017-12-01 20:59:29,927 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,928 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,928 - Server:Alford - INFO - connection accpted from_::1_40924
-2017-12-01 20:59:29,930 - Server:Alford - INFO - received data from_::1_40924
-AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:29,931 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,931 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,932 - Server:Alford - INFO - received EOF
-2017-12-01 20:59:29,932 - Server:Alford - INFO - closing
-2017-12-01 20:59:29,934 - Server:Alford - INFO - create client
-2017-12-01 20:59:29,934 - Server:Alford - INFO - As Client: connectiong to _::1_10004
-2017-12-01 20:59:29,936 - Server:Alford - INFO - As Client: sending 'AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
-2017-12-01 20:59:29,937 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,938 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,938 - Server:Alford - INFO - connection accpted from_::1_40936
-2017-12-01 20:59:29,939 - Server:Alford - INFO - received data from_::1_40936
-AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:29,940 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,940 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,941 - Server:Alford - INFO - received EOF
-2017-12-01 20:59:29,942 - Server:Alford - INFO - closing
-2017-12-01 20:59:29,943 - Server:Alford - INFO - create client
-2017-12-01 20:59:29,944 - Server:Alford - INFO - As Client: connectiong to _::1_10004
-2017-12-01 20:59:29,946 - Server:Alford - INFO - As Client: sending 'AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
-2017-12-01 20:59:29,947 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,948 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,948 - Server:Alford - INFO - connection accpted from_::1_40948
-2017-12-01 20:59:29,949 - Server:Alford - INFO - received data from_::1_40948
-AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:29,949 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,950 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,951 - Server:Alford - INFO - received EOF
-2017-12-01 20:59:29,952 - Server:Alford - INFO - closing
-2017-12-01 20:59:29,953 - Server:Alford - INFO - create client
-2017-12-01 20:59:29,954 - Server:Alford - INFO - As Client: connectiong to _::1_10004
-2017-12-01 20:59:29,956 - Server:Alford - INFO - As Client: sending 'AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
-2017-12-01 20:59:29,957 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,957 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,958 - Server:Alford - INFO - connection accpted from_::1_40960
-2017-12-01 20:59:29,958 - Server:Alford - INFO - received data from_::1_40960
-AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:29,959 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,960 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,961 - Server:Alford - INFO - received EOF
-2017-12-01 20:59:29,962 - Server:Alford - INFO - closing
-2017-12-01 20:59:29,963 - Server:Alford - INFO - create client
-2017-12-01 20:59:29,964 - Server:Alford - INFO - As Client: connectiong to _::1_10004
-2017-12-01 20:59:29,966 - Server:Alford - INFO - As Client: sending 'AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
-2017-12-01 20:59:29,967 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,967 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,968 - Server:Alford - INFO - connection accpted from_::1_40972
-2017-12-01 20:59:29,968 - Server:Alford - INFO - received data from_::1_40972
-AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:29,969 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,970 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,971 - Server:Alford - INFO - received EOF
-2017-12-01 20:59:29,972 - Server:Alford - INFO - closing
-2017-12-01 20:59:29,973 - Server:Alford - INFO - create client
-2017-12-01 20:59:29,974 - Server:Alford - INFO - As Client: connectiong to _::1_10004
-2017-12-01 20:59:29,976 - Server:Alford - INFO - As Client: sending 'AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
-2017-12-01 20:59:29,977 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,977 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,978 - Server:Alford - INFO - connection accpted from_::1_40984
-2017-12-01 20:59:29,979 - Server:Alford - INFO - received data from_::1_40984
-AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:29,980 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,980 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,981 - Server:Alford - INFO - received EOF
-2017-12-01 20:59:29,982 - Server:Alford - INFO - closing
-2017-12-01 20:59:29,984 - Server:Alford - INFO - create client
-2017-12-01 20:59:29,984 - Server:Alford - INFO - As Client: connectiong to _::1_10004
-2017-12-01 20:59:29,987 - Server:Alford - INFO - As Client: sending 'AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
-2017-12-01 20:59:29,987 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,988 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,988 - Server:Alford - INFO - connection accpted from_::1_40996
-2017-12-01 20:59:29,989 - Server:Alford - INFO - received data from_::1_40996
-AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:29,990 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,991 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:29,991 - Server:Alford - INFO - received EOF
-2017-12-01 20:59:29,993 - Server:Alford - INFO - closing
-2017-12-01 20:59:29,994 - Server:Alford - INFO - create client
-2017-12-01 20:59:29,995 - Server:Alford - INFO - As Client: connectiong to _::1_10004
-2017-12-01 20:59:29,998 - Server:Alford - INFO - As Client: sending 'AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
-2017-12-01 20:59:29,998 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,999 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:29,999 - Server:Alford - INFO - connection accpted from_::1_41008
-2017-12-01 20:59:30,005 - Server:Alford - INFO - received data from_::1_41008
-AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:30,006 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:30,006 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:30,009 - Server:Alford - INFO - create client
-2017-12-01 20:59:30,010 - Server:Alford - INFO - As Client: connectiong to _::1_10004
-2017-12-01 20:59:30,010 - Server:Alford - INFO - As Client: sending 'AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
-2017-12-01 20:59:30,011 - Server:Alford - INFO - received EOF
-2017-12-01 20:59:30,012 - Server:Alford - INFO - closing
-2017-12-01 20:59:30,013 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:30,013 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:30,019 - Server:Alford - INFO - connection accpted from_::1_41020
-2017-12-01 20:59:30,021 - Server:Alford - INFO - received data from_::1_41020
-AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
-2017-12-01 20:59:30,022 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:30,022 - Server:Alford - INFO - init client to tranfer message
-2017-12-01 20:59:30,025 - Server:Alford - INFO - create client
-2017-12-01 20:59:30,026 - Server:Alford - INFO - As Client: connectiong to _::1_10004
-2017-12-01 20:59:30,027 - Server:Alford - INFO - As Client: sending 'AT Alford +32748085.121085644 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
-2017-12-01 20:59:30,028 - Server:Alford - INFO - received EOF
-2017-12-01 20:59:30,029 - Server:Alford - INFO - closing
-2017-12-01 20:59:30,030 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:30,030 - Server:Alford - ERROR - Error connection
-2017-12-01 20:59:30,168 - Server:Alford - INFO - send to _::1_40446with json message
+2017-12-01 21:29:49,970 - Server:Alford - INFO - send to ('::1', 41034, 0, 0)with AT message
+AT Alford +32749905.574723005 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
+2017-12-01 21:29:49,980 - Server:Alford - INFO - create client
+2017-12-01 21:29:49,981 - Server:Alford - INFO - As Client: connectiong to _::1_10004
+2017-12-01 21:29:49,987 - Server:Alford - INFO - As Client: sending
+'AT Alford +32749905.574723005 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450'
+2017-12-01 21:29:49,988 - Server:Alford - ERROR - Error connection
+2017-12-01 21:29:49,989 - Server:Alford - ERROR - Error connection
+2017-12-01 21:29:49,994 - Server:Alford - INFO - connection accpted from_::1_41044
+2017-12-01 21:29:50,403 - Server:Alford - INFO - send to _::1_41034with json message
 {
-    "next_page_token": "CpQCDwEAAGTHFZciMd16T7u41Le2tvp-IS7aF7w1LWLofVUCy3llOVcqEnBpLzcIFYbpVOtshXXqB2rU7kfzEvVaC3idHDH_UiPcvi2Ahu9YIzY0aiQtKZFSTPgruujUkdPFvNFX2CdJaeqWETTVErkv8elNiy72jpXLGZkPYNqK0nrbjxvcWBDReI-mxspQ322mF_TQJgaAaz7Q2peT1TWtabj8LT1jn2dfh1baCSySH51UaPdMGJpxl_yoGHj9YKEp5YWRjwIJvVEn5WJkKddTfMNZnclTu2KoNpvtX84xz5vdFcBmy8eZ0y17HuK6am4QR53-eJin4nonrA0iiLk0W-iP-8Pjr-PtyrEfAfnCfR0mJ6p5EhAdBsEXBmKjuJzrWWVqR_CtGhR5AeUIo60xUaTY2uqm4UxQa238gQ",
+    "status": "OK",
+    "next_page_token": "CpQCDwEAAO73k2jEzOMIFuYMmQ7R6G9Z7F1dSZ68QVOn1U8W_j4n41A2o-JVz5UZ0GXb7RXez3SWTJNKgX5AmHJ1mtFcqbBtTdaDlchTIeWbvK68XWQrtNjrK4D_i_tgV0j-bzIKXw7IXDhvN72cvTUfFic3QraKdMvN0d-tf_YdbPJjw5MO46e4jvOCzdqFZ7OvbDGbm7iVO3hFLOKJigtg3wSRYkkgEq4mx_KJahc2D__S4Ae15tcKIw34VLx4hytvVEIz8tytg82YhjpmEyk4tNCX45WI8KEBYYON-wjAEyhw-s5msOOHLokgpUhaPvV3OTw-SNwUQfO3Jg7eQTe6pvVaF2HY5Vaeu5bpWOfsXrTIOp-7EhDvO1bZ5sbnzE1jFYOwrwn1GhRvlgNqQFjwfdIpqujCdDD_K_NmTQ",
     "results": [
         {
-            "reference": "CmRbAAAAKGQLq_ugw_1oa6jWrt1Y-t7k-yVVxJ6LcEaplDY0CIt5SfdubJnKQPj4mdkxtZPUK2AzK1jm9-aWlYA5uXvxCRkq49kVUC5IQ-sSLmxFvH3NrrHXmgqQZNOW6p4qUublEhB1PoAQYD_SyKTijcALL-HGGhSR_tXM-GmFArCk2tkjhBlgTyy2ng",
-            "scope": "GOOGLE",
-            "name": "Los Angeles",
-            "geometry": {
-                "viewport": {
-                    "southwest": {
-                        "lng": -118.6681759,
-                        "lat": 33.7036519
-                    },
-                    "northeast": {
-                        "lng": -118.1552891,
-                        "lat": 34.3373061
-                    }
-                },
-                "location": {
-                    "lng": -118.2436849,
-                    "lat": 34.0522342
-                }
-            },
-            "place_id": "ChIJE9on3F3HwoAR9AhGJW_fL-I",
             "types": [
                 "locality",
                 "political"
             ],
-            "photos": [
-                {
-                    "photo_reference": "CmRaAAAAAqG8jwTFtwOjpNSfjbQnpna0ty5aXvXTQ4e_GNnpHgm7dpPnwO5AOhQ-xyhN-hl1urkStwNo6qboBalVaurAxO7n2xXS-grHPRrmuyJIGGg9Ox9UTqNp3JjZneNQeUeAEhCI71SQlFQpi6OHq2VBR6wSGhTEAv53_qJ0-H0xjGLKTmbwn2TOzg",
-                    "width": 4000,
-                    "height": 3000,
-                    "html_attributions": [
-                        "<a href=\"https://maps.google.com/maps/contrib/117190772923098778352/photos\">Bodo</a>"
-                    ]
-                }
-            ],
-            "id": "7f7b7d8118ae8db8ed3f541159ac928c484d12ad",
-            "vicinity": "Los Angeles",
-            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png"
-        },
-        {
-            "reference": "CmRRAAAAJ1Zq6BHHEEZjzu_DNrjgqDS3JChEPyS__w2F4zjVW4YhfettR-ukm1x6laSfbCy_AADCwcy0w-wkTOEQQfjIKiorsnobX-cjio7g3AJ09bN8zkcy7WHDvr3vyVB1-rvIEhAO3GV1U6Cq7sMXE2vB6yyUGhRxU4pl8WFf0eFrm9IKdmzUPo06AA",
             "scope": "GOOGLE",
-            "rating": 4.1,
-            "id": "6386ccce03d4d355c8c2a4a79253097969895413",
-            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
-            "name": "Hotel Shangri-La",
+            "place_id": "ChIJE9on3F3HwoAR9AhGJW_fL-I",
             "geometry": {
-                "viewport": {
-                    "southwest": {
-                        "lng": -118.5004985302915,
-                        "lat": 34.0139419697085
-                    },
-                    "northeast": {
-                        "lng": -118.4978005697085,
-                        "lat": 34.0166399302915
-                    }
-                },
                 "location": {
-                    "lng": -118.49896,
-                    "lat": 34.015431
+                    "lat": 34.0522342,
+                    "lng": -118.2436849
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 34.3373061,
+                        "lng": -118.1552891
+                    },
+                    "southwest": {
+                        "lat": 33.7036519,
+                        "lng": -118.6681759
+                    }
                 }
             },
-            "place_id": "ChIJIxnYQcWkwoARVbqXi2BrqlM",
+            "vicinity": "Los Angeles",
+            "reference": "CmRbAAAAZCp1mR_avJdwTsVB9p53kV8D7wtYIchflmt731d5DuxUuaSD_9wAZlapa7nvo1CWf7gg5jWn8OlcHLzDTFOGChKN16LSY6I160YwVk2YWQUQDOZpTZQ6FCoNsSdMpb4YEhBzKBQNzUkV4IH1CuAqFKXqGhTkXP7nua1cnvg19NkSopwnkzx5Bw",
+            "photos": [
+                {
+                    "height": 3000,
+                    "photo_reference": "CmRaAAAAbm6uV-14n_P06wkKHVxIDcxJ8dVbZFFtZnL4cYaGtmdlAu4ieeDvdMuVdRnZgISn_CXp4m1VIvah8x2IxbOvFU6EUBAigimRcaU-xgUehVxPsaz8ldwR_5rTdgnoOEyyEhAbChd9p6xFJgQ-BOQvFBCaGhSmrwXO12MOKtg-HOmuMIoClPB9ag",
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/117190772923098778352/photos\">Bodo</a>"
+                    ],
+                    "width": 4000
+                }
+            ],
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+            "name": "Los Angeles",
+            "id": "7f7b7d8118ae8db8ed3f541159ac928c484d12ad"
+        },
+        {
             "types": [
                 "lodging",
                 "point_of_interest",
                 "establishment"
             ],
+            "scope": "GOOGLE",
+            "rating": 4.1,
+            "geometry": {
+                "location": {
+                    "lat": 34.015431,
+                    "lng": -118.49896
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 34.0166399302915,
+                        "lng": -118.4978005697085
+                    },
+                    "southwest": {
+                        "lat": 34.0139419697085,
+                        "lng": -118.5004985302915
+                    }
+                }
+            },
+            "opening_hours": {
+                "weekday_text": [],
+                "open_now": true
+            },
+            "reference": "CmRRAAAAtFyykGSb7Yqi6cykiGspm9mqr0E8x2VvVQEyCCoTuXD9GJAbTVJ4FtUfVODKQDzBUuUdaXRJ-btObQy3JnnZhu7zn8kBk5LG8gOyzPJMyVU8N9w9VOigg7hsNXQePVivEhDXgzX1nHolJABe9ZjL9szbGhRuUVRJllCrxlLhYCZ1fngxu_3_AQ",
+            "id": "6386ccce03d4d355c8c2a4a79253097969895413",
+            "place_id": "ChIJIxnYQcWkwoARVbqXi2BrqlM",
+            "vicinity": "1301 Ocean Avenue, Santa Monica",
             "photos": [
                 {
-                    "photo_reference": "CmRaAAAAIW5ZNwrbiUReUUPWTw64mhwRW8DSNin5UDCXQc-p3wE6J0g9lgJ8ba0TapjawRcD1jI2Fw7mfx2aUhrUHlrrn-11rUbFwmV7CvrNivxGg74rHuJaToAw11kZkAl8ShbJEhB9sAJr-cL_jezGNecF_vw-GhSKYm37XCX57D7OWhVLmDjOogVt_A",
-                    "width": 980,
                     "height": 500,
+                    "photo_reference": "CmRaAAAAh565DGfiHt0fS0glS1BYQ2IrfJiwy-DQFjcY4qYCJVoAY-NceJRk_iAoLU4FOhJ3KV8JICm5yJVoEL8ZHKzGRT3nOApe-LGsAcVVeK0_7KL6WhLi-sh6W29Lwog_zrHjEhCQdT69GjO3KLU3aZol14O7GhSZJzuehMchqn-FcTryka5AlzNjLg",
                     "html_attributions": [
                         "<a href=\"https://maps.google.com/maps/contrib/102232977187075463033/photos\">Hotel Shangri-La</a>"
-                    ]
+                    ],
+                    "width": 980
                 }
             ],
-            "opening_hours": {
-                "open_now": true,
-                "weekday_text": []
-            },
-            "vicinity": "1301 Ocean Avenue, Santa Monica"
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+            "name": "Hotel Shangri-La"
         }
     ],
-    "status": "OK",
     "html_attributions": []
 }
 
-2017-12-01 20:59:30,174 - Server:Alford - INFO - closing
+2017-12-01 21:29:50,408 - Server:Alford - INFO - closing

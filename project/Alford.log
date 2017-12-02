@@ -1,4 +1,127 @@
-starting up on localhost port 10000
-closing server
-closing event loop
-starting up on localhost port 10000
+2017-12-01 21:57:39,757 - Server:Alford - INFO - starting up on localhost port 10001
+2017-12-01 21:57:48,881 - Server:Alford - INFO - connection accpted from_127.0.0.1_14817
+2017-12-01 21:57:48,882 - Server:Alford - INFO - received data from_127.0.0.1_14817
+IAMAT kiwi.cs.ucla.edu +34.068930-118.445127 1512194268.8814166
+2017-12-01 21:57:48,883 - Server:Alford - INFO - Process String
+2017-12-01 21:57:48,883 - Server:Alford - INFO - Process IAMAT command
+2017-12-01 21:57:48,884 - Server:Alford - INFO - process AT command
+2017-12-01 21:57:48,884 - Server:Alford - INFO - SAVED
+2017-12-01 21:57:48,884 - Server:Alford - INFO - {"{'kiwi.cs.ucla.edu': ('+34.068930-118.445127', 1512194268.8814166, 'AT Alford +0.0026040077209472656 kiwi.cs.ucla.edu +34.068930-118.445127 1512194268.8814166')}"}
+2017-12-01 21:57:48,885 - Server:Alford - INFO - init client to tranfer message
+2017-12-01 21:57:48,885 - Server:Alford - INFO - init client to tranfer message
+2017-12-01 21:57:48,886 - Server:Alford - INFO - connection closed from_127.0.0.1_14817
+2017-12-01 21:57:48,887 - Server:Alford - INFO - create client
+2017-12-01 21:57:48,887 - Server:Alford - INFO - As Client: connectiong to _127.0.0.1_10002
+2017-12-01 21:57:48,888 - Server:Alford - INFO - As Client: sending _127.0.0.1_10002
+'AT Alford +0.0026040077209472656 kiwi.cs.ucla.edu +34.068930-118.445127 1512194268.8814166'
+2017-12-01 21:57:48,889 - Server:Alford - INFO - handling client result
+2017-12-01 21:57:48,889 - Server:Alford - INFO - connection accpted from_127.0.0.1_14820
+2017-12-01 21:57:48,889 - Server:Alford - INFO - received data from_127.0.0.1_14820
+WHATSAT kiwi.cs.ucla.edu 10 5
+2017-12-01 21:57:48,892 - Server:Alford - INFO - Process String
+2017-12-01 21:57:48,892 - Server:Alford - INFO - process WHATSAT command
+2017-12-01 21:57:48,893 - Server:Alford - INFO - {"{'kiwi.cs.ucla.edu': ('+34.068930-118.445127', 1512194268.8814166, 'AT Alford +0.0026040077209472656 kiwi.cs.ucla.edu +34.068930-118.445127 1512194268.8814166')}"}
+2017-12-01 21:57:48,894 - Server:Alford - INFO - send to ('127.0.0.1', 14820)with AT message
+AT Alford +0.0026040077209472656 kiwi.cs.ucla.edu +34.068930-118.445127 1512194268.8814166
+2017-12-01 21:57:48,897 - Server:Alford - INFO - connection accpted from_127.0.0.1_14822
+2017-12-01 21:57:48,897 - Server:Alford - INFO - received data from_127.0.0.1_14822
+AT Alford +0.0026040077209472656 kiwi.cs.ucla.edu +34.068930-118.445127 1512194268.8814166
+2017-12-01 21:57:48,898 - Server:Alford - INFO - Process String
+2017-12-01 21:57:48,899 - Server:Alford - INFO - process AT command
+2017-12-01 21:57:48,899 - Server:Alford - INFO - connection closed from_127.0.0.1_14822
+2017-12-01 21:57:49,314 - Server:Alford - INFO - send to _127.0.0.1_14820 with json message
+{
+    "results": [
+        {
+            "reference": "CmRbAAAAYj7qmBqPDg7yIhImNGDZQxk7hSHzNUVbiqdayDw9StsSVEMRL_28otFMzJNuQAQG6hLg8jmT2MuGAlJfod1po07KVbgv5UQ2FZhGVEAU0ukFiIE8YhmrmrLpdWFntac0EhD_2AfMaf4Zb637it298lVzGhToFxk-J3sUszmy-wHTecAPzpxg0Q",
+            "place_id": "ChIJE9on3F3HwoAR9AhGJW_fL-I",
+            "photos": [
+                {
+                    "photo_reference": "CmRaAAAA5mq3CB28bUmKMpK9kh-0GwMxKMPaK3DT1-5OAVDJzbZGu0LHf8H9kBK3JXjmRd2XqR8dLOfaYd5ygZ8S0XjHBOHAu8KP0XWvBcygOcAryMuz2BjArZ0X1zefvY3nW6_TEhC8Sjm-Q8j0HhE2Q2SsVo2FGhTeO8Zi2H1BGXukwDDrMbGft4FIcg",
+                    "width": 4000,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/117190772923098778352/photos\">Bodo</a>"
+                    ],
+                    "height": 3000
+                }
+            ],
+            "name": "Los Angeles",
+            "scope": "GOOGLE",
+            "id": "7f7b7d8118ae8db8ed3f541159ac928c484d12ad",
+            "vicinity": "Los Angeles",
+            "types": [
+                "locality",
+                "political"
+            ],
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+            "geometry": {
+                "location": {
+                    "lat": 34.0522342,
+                    "lng": -118.2436849
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 34.3373061,
+                        "lng": -118.1552891
+                    },
+                    "southwest": {
+                        "lat": 33.7036519,
+                        "lng": -118.6681759
+                    }
+                }
+            }
+        },
+        {
+            "id": "6386ccce03d4d355c8c2a4a79253097969895413",
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+            "scope": "GOOGLE",
+            "vicinity": "1301 Ocean Avenue, Santa Monica",
+            "types": [
+                "lodging",
+                "point_of_interest",
+                "establishment"
+            ],
+            "geometry": {
+                "location": {
+                    "lat": 34.015431,
+                    "lng": -118.49896
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 34.0166399302915,
+                        "lng": -118.4978005697085
+                    },
+                    "southwest": {
+                        "lat": 34.0139419697085,
+                        "lng": -118.5004985302915
+                    }
+                }
+            },
+            "rating": 4.1,
+            "reference": "CmRRAAAAeYmfwfwZBzBs5gZ2X1-n7YZasvyGObO_VI81l00gabMoveR2E-4y_6pXrowyrHFOYFdSyzZRKVuF2QcTvkTwfLVvBS831lL7m2wdKJ9EZszP95fUNUd6EKpsPQ2iUwJqEhBqXCnvXgjaVTyIan5tVy6NGhSBY0YGlZe1WJM0-obgqw029TqUjg",
+            "place_id": "ChIJIxnYQcWkwoARVbqXi2BrqlM",
+            "photos": [
+                {
+                    "photo_reference": "CmRaAAAAqeUPjjyZj4iSbrFCmGN98DuSN-9G5nMRmMJOUCyaHb7bzryl17obDwKXeIAJoroQGKSIHJJUK5FgKg73ZVYqgHoqKF8gbQEQX-kNISiMJWEz0hLvvtwLa_NTzi-qIhs0EhAw_bPjOjgGHv_TQPMiAjxOGhTIPDjKLlA5AoBEdg8hpt3FDYIaEA",
+                    "width": 980,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/102232977187075463033/photos\">Hotel Shangri-La</a>"
+                    ],
+                    "height": 500
+                }
+            ],
+            "name": "Hotel Shangri-La",
+            "opening_hours": {
+                "weekday_text": [],
+                "open_now": true
+            }
+        }
+    ],
+    "status": "OK",
+    "html_attributions": [],
+    "next_page_token": "CpQCDwEAADOYzzThtKAzLVGDiHgdisdkomsvVs_1yLcHsAWbmEABHHktt8r-Zjk1O3GY_XvZ1Xg7i_ftaA8w1sis37zQIyB43PzsBHDTiTpMGjo0xz9yObR8Hh957Mtbs-xOYTM6GX-ni0CF7GsmD01cR0MRiA2vfd2HtHEvRjSrg-_MiP0K_ITCWlqHZBcluzdV2WSaCuU-MYJKyviXklbMKQfMhDlZyHda3SRnXvcW95JtoaUp8yY9YrwXiDLlWPR1y2ot77UHfniokQ8gtLUAiml-vmXWCTKSroAohIBlLB0COECJzZ5ftqNPUq2IgdYCe0JAZsJwZp5sx_1tcgA9vgRQAyvyhXaujNxVLdHDYaO6znidEhDp2hH4eejx3k4cEdM7kWM2GhQLwpNwtitRN-OjeeNVOTNx9yKo4A"
+}
+
+2017-12-01 21:57:49,434 - Server:Alford - INFO - connection closed from_127.0.0.1_14820
+2017-12-01 21:57:49,887 - Server:Alford - INFO - handling client result
+2017-12-01 21:57:49,887 - Server:Alford - ERROR - Connecting issue with Welsh at the port_localhost_10005

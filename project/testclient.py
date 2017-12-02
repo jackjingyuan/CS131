@@ -1,77 +1,54 @@
+import time
 import asyncio
-import functools
 import logging
-import sys
 
-MESSAGES = [
-    'IAMAT kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450',
-    'WHATSAT kiwi.cs.ucla.edu 10 5'
-]
-SERVER_ADDRESS = ('localhost', 10000)
-
-logging.basicConfig(
-    level=logging.DEBUG,
-    format='%(name)s: %(message)s',
-    stream=sys.stderr,
-)
-log = logging.getLogger('main')
-
-event_loop = asyncio.get_event_loop()
+name= 'testclient';
+Server_Log=logging.getLogger('Server:%s'%(name));
+fileHandler=logging.FileHandler('%s.log'%(name));
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+fileHandler.setFormatter(formatter);
+fileHandler.setLevel(logging.INFO);
+Server_Log.addHandler(fileHandler);
 
 
-class EchoClient(asyncio.Protocol):
-    def __init__(self, messages, future):
-        super().__init__()
-        self.messages = messages
-        self.log = logging.getLogger('EchoClient')
-        self.f = future
+
+class EchoClientProtocol(asyncio.Protocol):
+    def __init__(self, message, loop):
+        self.message = message
+        self.loop = loop
 
     def connection_made(self, transport):
-        self.transport = transport
-        self.address = transport.get_extra_info('peername')
-        self.log.debug(
-            'connectiong to {} port {}'.format(*self.address)
-        )
-        # 也可以使用 transport.writelines()
-        # 这里使用 transport.write() 是为了方便
-        # 记录发送的每一行内容
-        for msg in self.messages:
-            transport.write(msg.encode())
-            self.log.debug('sending {!r}'.format(msg))
-
+        transport.write(self.message.encode())
+        Server_Log.info('Data sent: {!r}'.format(self.message))
 
     def data_received(self, data):
-        self.log.debug('received {!r}'.format(data))
+        Server_Log.info('Data received: {}'.format(data.decode()))
 
-    def eof_received(self):
-        self.log.debug('received EOF')
-        self.transport.close()
-        if not self.f.done():
-            self.f.set_result(True)
+    def connection_lost(self, exc):
+        Server_Log.info('The server closed the connection')
+        Server_Log.info('Stop the event loop')
+        self.loop.stop()
 
-    def connnection_lost(self, exc):
-        self.log.debug('server closed connection')
-        self.transport.close()
-        if not self.f.done():
-            self.f.set_result(True)
-        super().connectiong_lost(exc)
-
-
-client_completed = asyncio.Future()
-client_factory = functools.partial(
-    EchoClient,
-    messages=MESSAGES,
-    future=client_completed
-)
-factory_coroutine = event_loop.create_connection(
-    client_factory,
-    *SERVER_ADDRESS,
-)
-
-log.debug('waiting for client to complete')
-try:
-    event_loop.run_until_complete(factory_coroutine)
-    event_loop.run_until_complete(client_completed)
-finally:
-    log.debug('closing event loop')
-    event_loop.close()
+loop = asyncio.get_event_loop()
+when = time.time()
+message = 'IAMAT kiwi.cs.ucla.edu +34.068930-118.445127 %s'%(str(when));
+coro = loop.create_connection(lambda: EchoClientProtocol(message, loop),
+                               '127.0.0.1', 10001)
+loop.run_until_complete(coro)
+loop.run_forever()
+message = 'WHATSAT kiwi.cs.ucla.edu 10 5'
+coro = loop.create_connection(lambda: EchoClientProtocol(message, loop),
+                              '127.0.0.1', 10001)
+loop.run_until_complete(coro)
+loop.run_forever()
+#message = f'IAMAT kiwi.cs.ucla.edu +50.068930-118.445127 {when+1}\n'
+#coro = loop.create_connection(lambda: EchoClientProtocol(message, loop),
+#                              '127.0.0.1', 10001)
+#loop.run_until_complete(coro)
+#loop.run_forever()
+#message = 'WHATSAT kiwi.cs.ucla.edu 10 5\n'
+#coro = loop.create_connection(lambda: EchoClientProtocol(message, loop),
+#                              '127.0.0.1', 10001)
+#loop.run_until_complete(coro)
+#loop.run_forever()
+loop.close()

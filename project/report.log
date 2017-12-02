@@ -1,0 +1,158 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.7.9)  1 DEC 2017 19:04
+entering extended mode
+**d:/CS131/project/report.tex
+(d:/CS131/project/report.tex
+LaTeX2e <2017-04-15>
+Babel <3.9t> and hyphenation patterns for 76 language(s) loaded.
+(E:\MiKTex\tex\latex\base\article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(E:\MiKTex\tex\latex\base\size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (report.aux)
+\openout1 = `report.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 16.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 16.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 16.
+
+Underfull \hbox (badness 1253) in paragraph at lines 30--31
+\OT1/cmr/m/n/10 The event loop pro-vided by asyn-cio al-lows my
+ []
+
+
+Underfull \hbox (badness 2922) in paragraph at lines 30--31
+\OT1/cmr/m/n/10 in-creases of clas-si-cal mul-ti-threaded con-cur-rency
+ []
+
+
+Underfull \hbox (badness 7576) in paragraph at lines 30--31
+\OT1/cmr/m/n/10 based Pro-to-cols and coroutine-based Streams.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
+
+ []
+
+[1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
+
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2]
+Underfull \hbox (badness 10000) in paragraph at lines 53--57
+\OT1/cmr/m/n/10 http://www.haneycodes.net/npm-left-pad-have-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--62
+[]\OT1/cmr/m/n/10 Gavin Vick-ery, \OT1/cmr/m/it/10 Af-ter A Year Of Us-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--62
+\OT1/cmr/m/it/10 NodeJS In Pro-duc-tion\OT1/cmr/m/n/10 , Geek for Brains,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--62
+\OT1/cmr/m/n/10 https://blog.geekforbrains.com/after-a-year-
+ []
+
+
+Underfull \hbox (badness 7907) in paragraph at lines 63--67
+[]\OT1/cmr/m/n/10 Gavin Vick-ery, \OT1/cmr/m/it/10 Why I'm Switch-ing From
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--67
+\OT1/cmr/m/it/10 Python To NodeJS\OT1/cmr/m/n/10 , Geek for Brains,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--67
+\OT1/cmr/m/n/10 https://blog.geekforbrains.com/why-im-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--72
+[]\OT1/cmr/m/n/10 Thomas Claburn, \OT1/cmr/m/it/10 The fu-ture of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--72
+\OT1/cmr/m/it/10 Python: Con-cur-rency de-voured,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--72
+\OT1/cmr/m/it/10 Node.js next on menu\OT1/cmr/m/n/10 , The Reg-is-ter,
+ []
+
+
+Overfull \hbox (38.46175pt too wide) in paragraph at lines 68--72
+\OT1/cmr/m/n/10 https://www.theregister.co.uk/2017/08/16/python[]future 
+ []
+
+
+Underfull \hbox (badness 3240) in paragraph at lines 73--77
+[]\OT1/cmr/m/n/10 Uroosa Se-har, \OT1/cmr/m/it/10 Node.JS vs Python: Which
+ []
+
+
+Underfull \hbox (badness 4819) in paragraph at lines 73--77
+\OT1/cmr/m/it/10 is Best Op-tion for Your Startup\OT1/cmr/m/n/10 , Vizteck
+ []
+
+
+Underfull \hbox (badness 2653) in paragraph at lines 73--77
+\OT1/cmr/m/n/10 So-lu-tions, https://vizteck.com/blog/node-js-vs-
+ []
+
+[3] (report.aux) ) 
+Here is how much of TeX's memory you used:
+ 240 strings out of 493320
+ 2450 string characters out of 3146754
+ 65574 words of memory out of 3000000
+ 3852 multiletter control sequences out of 15000+200000
+ 8241 words of font info for 29 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 23i,7n,19p,1604b,219s stack positions out of 5000i,500n,10000p,200000b,50000s
+<E:/MiKTex/fonts/type1/public/amsfonts/cm/cmbx10.pfb><E:/MiKT
+ex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><E:/MiKTex/fonts/type1/public/amsf
+onts/cm/cmr10.pfb><E:/MiKTex/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/MiKTe
+x/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on report.pdf (3 pages, 94240 bytes).
+PDF statistics:
+ 32 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
