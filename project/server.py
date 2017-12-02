@@ -28,14 +28,14 @@ Server_Address = {
 name = sys.argv[1];
 
 clients_dict=dict();
-#log 文件设置
+#log file basic config
 logging.basicConfig(
     level=logging.DEBUG,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     stream=sys.stderr,
 )
 
-#设置log file
+#setting log file
 Server_Log=logging.getLogger('Server:%s'%(name));
 fileHandler=logging.FileHandler('%s.log'%(name));
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -43,45 +43,44 @@ fileHandler.setFormatter(formatter);
 Server_Log.addHandler(fileHandler);
 
 
-#Url 地址
+#Url address
 Url_Address = ["https://maps.googleapis.com/maps/api/place/search/json?location=",
 ",",
 "&radius=",
 "&key=AIzaSyB0xXtrdEjVUoDh4zQUGiA0WWNRtMe1A5w"]
 
-#创建时间循环
+#create event_loop
 event_loop = asyncio.get_event_loop();
 
-#客户端端口设置
+#Client port setting
 class EchoClient(asyncio.Protocol):
-    #初始函数
+    #constructor
     def __init__(self, message):
         super().__init__();
         self.message=message;
         Server_Log.info('Create client');
 
-    #再定义connect_made
+    #connect_made
     def connection_made(self, transport):
         self.transport=transport;
         self.address=transport.get_extra_info('peername');
         Server_Log.info('As Client: connectiong to _{}_{}'.format(*self.address));
 
-        #发送信息
+        ####################send message####################
         transport.write(self.message.encode());
         Server_Log.info('As Client: sending _{}_{}'.format(*self.address)+'\n{!r}'.format(self.message));
-
-        #最后发送eof
+        ####################send message####################
     
-    #作为客户端 受到信息
+    #Response from Server
     def data_received(self, data):
         Server_Log.info('As Client: received \n{!r}'.format(data))
 
-    #收到EOF关闭端口
+    #Received EOF close port
     def eof_received(self):
         Server_Log.info('As Client: Client closed connection with _{}_{}'.format(*self.address)+' Because eof was received.');
         self.transport.close();
 
-    #服务器端关闭关闭端口
+    #Server-side close then Client side closed
     def connnection_lost(self, exc):
         Server_Log.info('As Client: Client closed connection with _{}_{}'.format(*self.address));
         self.transport.close()
@@ -90,27 +89,27 @@ class EchoClient(asyncio.Protocol):
 
 
 
-#服务器设置
+#Server setting
 class EchoServer(asyncio.Protocol):
-    #构造函数
+    #constructor
     def __init__(self, name):
         super().__init__();
         self.name=name;
         Server_Log.info('Create Server');
     
-    #接收到客户端连接请求
+    #Client connection with Server
     def connection_made(self, transport):
         self.transport=transport;
         self.address=transport.get_extra_info('peername');
         Server_Log.info('connection accpted from_{}_{}'.format(*self.address));
 
-    #收到信息    
+    #Server received message from client
     def data_received(self, data):
         msg=data.decode();
         Server_Log.info('received data from_{}_{}'.format(*self.address)+'\n%s'%(msg));
         self.procString(msg);
     
-    #关闭连接
+    #Close connection
     def connection_lost(self, error):
         if error:
             Server_Log.error('Error occur when connection lost error:{}'.format(error));
@@ -124,29 +123,29 @@ class EchoServer(asyncio.Protocol):
     #    if self.transport.can_write_eof():
     #        self.transport.write_eof()
 
-    #检查坐标
+    #Check legality of coord_str
     def check_coords(self, coord_str):
-        ############检查0位############
+        ##############0##############
         if not coord_str[0] in ['+', '-']:
             Server_Log.error("Error format in coordination "+coord_str);
             raise ValueError;
-        ############检查0位############
-        ########检查第二个符号位#########
+        ##############0##############
+        ########secode sign position#########
         index=-1;
         for i in range(1, len(coord_str)):
             if coord_str[i] == '+' or coord_str[i] == '-':
                 index = i;
-                break;
         if index==-1:
+                break;
             Server_Log.error("Error format in coordination "+coord_str);
             raise ValueError;
-        ########检查第二个符号位#########
-        #####检查是否能转化位浮点型#######
+        ########secode sign position#########
+        #####transfer to float#######
         float(coord_str[:index]);
         float(coord_str[index:]);
-        #####检查是否能转化位浮点型#######
+        #####transfer to float#######
 
-    #coord_str 切割为两个部分
+    #coord_str  to two parts
     def coord_to_tuple(self, coord_str, msg):
         index=-2;
         if coord_str.find('+', 1)==-1:
@@ -155,7 +154,7 @@ class EchoServer(asyncio.Protocol):
             index=coord_str.find('+', 1);
         return (coord_str[:index], coord_str[index:]);
     
-    #获取html文件
+    #get html file
     async def get_html(self, url):
         Server_Log.info('Request html from url:\n'+url);
         async with aiohttp.ClientSession() as session:
@@ -164,7 +163,7 @@ class EchoServer(asyncio.Protocol):
                     html = await response.text();
                     return html;
     
-    #处理client端口
+    #client return value check
     def handler_client(self , server_name, task):
         Server_Log.info('handling client result');
         try:
@@ -172,27 +171,27 @@ class EchoServer(asyncio.Protocol):
         except:
             Server_Log.error('Connecting issue with '+server_name+' at the port_{}_{}'.format(*Server_Address[server_name]));
     
-    #处理html文件
+    #html file check
     def handler_html(self, items, task):        
         try:
-            ###########获取文件###########
+            ###########get json###########
             data = task.result();
             data_dict = json.loads(data);
-            ###########获取文件###########
-            ###########处理文件###########
+            ###########get json###########
+            ###########deal with json###########
             data_dict['results'] = data_dict['results'] [:items];
             res = json.dumps(data_dict, indent=4) + "\n";
-            ###########处理文件###########
-            ###########发送文件###########
+            ###########deal with json###########
+            ###########send json###########
             self.transport.write(res.encode());
             Server_Log.info('send to _{}_{}'.format (*self.address)+' with json message\n{}'.format  (res));
-            ###########发送文件###########
+            ###########send json###########
         except:
             Server_Log.error("Connect issue with Google. Google server == potato");
         finally:
             self.transport.close();
 
-    #处理错误
+    #error handler
     def errorhandler(self, msg):
         Server_Log.error('Error at _{}_{}'.format(*self.address)+' Because error format:\n{}'.format(msg));
         self.transport.write(('? '+msg).encode());
@@ -200,23 +199,23 @@ class EchoServer(asyncio.Protocol):
         return;
     
     
-    #处理message
+    #process message
     def procString(self, msg):
         Server_Log.info('Processing String');
         temp=list(filter(None,msg.split(' ')));
         if temp[0]=='IAMAT':
-            self.proc_IAMAT(msg);#line: 193
+            self.proc_IAMAT(msg);#line: 216
         elif temp[0]=='AT':
-            self.proc_AT(msg);#line225
+            self.proc_AT(msg);#line 250
         elif temp[0]=='WHATSAT':
-            self.proc_WHATSAT(msg);#line 272
+            self.proc_WHATSAT(msg);#line 297
         else:
             self.errorhandler(msg)
     
-    #处理指令IAMAT
+    #process IAMAT
     def proc_IAMAT(self, msg):
         Server_Log.info('Processing IAMAT command');
-        ##############查看合法性##############
+        ##############check  legality##############
         split_msg=list(filter(None,msg.split(' ')));
         if len(split_msg) !=4:
             self.errorhandler(msg);
@@ -228,8 +227,8 @@ class EchoServer(asyncio.Protocol):
         except ValueError:
             self.errorhandler(msg);
             return;
-        ##############查看合法性##############
-        ##############重造AT指令##############
+        ##############check  legality##############
+        ##############built AT command##############
         rece_time=float(split_msg[3])
         cur_time=time.time();
         sign='';
@@ -239,18 +238,18 @@ class EchoServer(asyncio.Protocol):
             sign='-';
 
         reponse="AT "+self.name+" "+sign+str(cur_time-rece_time)+" "+" ".join(split_msg[1:]);
-        ##############重造AT指令##############
-        ############发送/处理AT指令############
+        ##############built AT command##############
+        ############send/call AT command############
         self.transport.write(reponse.encode());
         self.proc_AT(reponse);
-        ############发送/处理AT指令############
+        ############send/call AT command############
         self.transport.close();
     
-    #处理AT指令
+    #proccess AT command
     #AT[0] Alford[1] +0.263873386[2] kiwi.cs.ucla.edu[3] +34.068930-118.445127[4] 1479413884.392014450[5]
     def proc_AT(self, msg):
         Server_Log.info('process AT command');
-        ##############查看合法性##############
+        ##############check  legality##############
         split_msg=list(filter(None,msg.split(' ')));
         if len(split_msg)!=6:
             self.errorhandler(msg);
@@ -263,12 +262,12 @@ class EchoServer(asyncio.Protocol):
         except ValueError:
             self.errorhandler(msg);
             return;
-        ##############查看合法性##############
-        #############抽取字符变量#############
+        ##############check  legality##############
+        #############extract varibles#############
         client=split_msg[3];
         coords=split_msg[4];
         time=float(split_msg[5]);
-        #############抽取字符变量#############
+        #############extract varibles#############
         #判断是否在client的data_base若不存在查看创建时间->
         if (client in clients_dict and (time>clients_dict[client][1])) or (not client in clients_dict):
             #->放入本服务器的client的data_base->
@@ -293,11 +292,11 @@ class EchoServer(asyncio.Protocol):
         #判断是否在client的data_base若不存在查看创建时间<-
         self.transport.close();
 
-    #处理WHATSAT指令
+    #process WHATSAT command
     #WHATSAT[0] kiwi.cs.ucla.edu[1] 10[2] 5[3]
     def proc_WHATSAT(self, msg):
         Server_Log.info('process WHATSAT command');
-        ##############查看合法性##############
+        ##############check  legality##############
         split_msg=list(filter(None,msg.split(' ')));
         if len(split_msg)!=4:
             self.errorhandler(msg);
@@ -311,33 +310,33 @@ class EchoServer(asyncio.Protocol):
         except ValueError:
             self.errorhandler(msg);
             return;
-        ##############查看合法性##############
-        ####查看client是否在client的data_base中####
+        ##############check  legality##############
+        ####check client with data_base####
         Server_Log.info("%s"%{str(clients_dict)});
         client=split_msg[1];
         if not client in clients_dict:
             self.errorhandler(msg);
             return;
-        ####查看client是否在client的data_base中####
-        ##########抽取变量创建url链接##########
+        ####check client with data_base####
+        ##########create url link##########
         radius=int(split_msg[2])*1000;
         items_num=int(split_msg[3]);
         coords=self.coord_to_tuple(clients_dict[client][0], msg);
         At_msg=clients_dict[client][2];
         url_link=Url_Address[0]+coords[0]+Url_Address[1]+coords[1]+Url_Address[2]+str(radius)+Url_Address[3];
-        ##########抽取变量创建url链接##########
-        #############发送AT指令#############
+        ##########create url link##########
+        #############send at command#############
         Server_Log.info('send to '+str(self.address)+'with AT message\n{}'.format(At_msg));
         self.transport.write(At_msg.encode());
-        #############发送AT指令#############
-        ##########取得/处理html文件###########
+        #############send at command#############
+        ##########obtain and deal with html file###########
         task=event_loop.create_task(self.get_html(url_link));
         task.add_done_callback(partial(self.handler_html, items_num));
-        ##########取得/处理html文件###########
+        ##########obtain and deal with html file###########
         return;
 
 
-#程序入口
+#program entance
 factory=event_loop.create_server(partial(EchoServer, name), *Server_Address[name]);
 server=event_loop.run_until_complete(factory);
 Server_Log.info('starting up on {} port {}'.format(*Server_Address[name]));
