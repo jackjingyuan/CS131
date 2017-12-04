@@ -2,7 +2,6 @@ import re
 import sys
 import json
 import time
-import aiohttp
 import asyncio
 import logging
 import urllib.request
@@ -135,8 +134,8 @@ class EchoServer(asyncio.Protocol):
         for i in range(1, len(coord_str)):
             if coord_str[i] == '+' or coord_str[i] == '-':
                 index = i;
-        if index==-1:
                 break;
+        if index==-1:
             Server_Log.error("Error format in coordination "+coord_str);
             raise ValueError;
         ########secode sign position#########
@@ -156,14 +155,45 @@ class EchoServer(asyncio.Protocol):
     
     #get html file
     async def get_html(self, url):
-        Server_Log.info('Request html from url:\n'+url);
-        async with aiohttp.ClientSession() as session:
-            with async_timeout.timeout(10):
-                async with session.get(url) as response:
-                    html = await response.text();
-                    return html;
+        Server_Log.info('Get json file from google');
+        reader, writer = await asyncio.open_connection("maps.google.com", 443,loop=event_loop,ssl=True);
+        url = "/maps/" + url.split("/maps/")[1]
+        http = "GET "+ url + " HTTP/1.1\r\n" +"User-Agent: curl/7.16.3 libcurl/7.16.3 " +"OpenSSL/0.9.7l zlib/1.2.3\r\n" + "Host: maps.googleapis.com\r\n" + "Content-Type: text/plain; charset=utf-8\r\n\r\n";
+        writer.write(http.encode());
+
+        html_file = '';
+        Head_buffer = '    ';
+        while Head_buffer != '\r\n\r\n':
+            await writer.drain();
+            Head_buffer = Head_buffer[1:];
+            data = (await reader.read(1)).decode('latin1');
+            Head_buffer += data;
+
+        while True:                                    
+            chunk_len = 0;
+            Shit_buffer = '';
+            while len(Shit_buffer) < 2 or Shit_buffer[-2:] != '\r\n':
+                await writer.drain();
+                Shit_buffer += (await reader.read(1)).decode('latin1');
+                
+            chunk_len = int(Shit_buffer[:-2], 16)
+            if chunk_len == 0:
+                break;
+            
+            cnt = 0;
+            while cnt < chunk_len:
+                await writer.drain();
+                data = (await reader.read(1)).decode('latin1');
+                cnt += len(data);
+                html_file += data;
+            await writer.drain();
+            data = (await reader.read(1)).decode('latin1');
+            await writer.drain();                   
+            data = (await reader.read(1)).decode('latin1');
+                
+        writer.close()
+        return html_file
     
-    #client return value check
     def handler_client(self , server_name, task):
         Server_Log.info('handling client result');
         try:
