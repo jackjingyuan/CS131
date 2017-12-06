@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.7.9)  5 DEC 2017 14:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.7.9)  5 DEC 2017 20:51
 entering extended mode
 **d:/CS131/homework6/report.tex
 (d:/CS131/homework6/report.tex
@@ -236,25 +236,114 @@ LaTeX Font Info:    ... okay on input line 12.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \big@size=\dimen134
-(report.bbl) [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
+Underfull \hbox (badness 2150) in paragraph at lines 17--18
+\OT1/ptm/m/n/10 ex-e-cutable pack-age of a piece of soft-ware that
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
+\OT1/ptm/m/n/10 dif-fer-ences be-tween de-vel-op-ment and stag-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
+
+ []
+
+
+Underfull \hbox (badness 2158) in paragraph at lines 21--22
+\OT1/ptm/m/n/10 in-ter-pre-ta-tion for most of code and com-pi-la-tion
+ []
+
+
+Underfull \hbox (badness 1424) in paragraph at lines 21--22
+\OT1/ptm/m/n/10 man-age-ment. Java im-ple-mented with static scope
+ []
+
+
+Underfull \hbox (badness 1558) in paragraph at lines 21--22
+\OT1/ptm/m/n/10 check-ing like other lan-guages. Cur-rently, lots of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
+
+ []
+
+[1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 ]
-(report.aux) ) 
+Underfull \hbox (badness 1360) in paragraph at lines 25--26
+\OT1/ptm/m/n/10 this at-tribute is in-com-pat-i-ble with the de-sign of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+
+ []
+
+
+Underfull \hbox (badness 7291) in paragraph at lines 29--30
+\OT1/ptm/m/n/10 from ML also im-ple-mented with object-orient
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+
+ []
+
+
+Underfull \hbox (badness 2126) in paragraph at lines 31--32
+[]\OT1/ptm/m/n/10 Native code com-piler is avail-able from many
+ []
+
+
+Underfull \hbox (badness 3209) in paragraph at lines 31--32
+\OT1/ptm/m/n/10 con-tainer. OCaml's op-ti-miz-ing com-piler em-ploys
+ []
+
+
+Underfull \hbox (badness 2644) in paragraph at lines 31--32
+\OT1/ptm/m/n/10 [3] Also bea-cuse of li-braries in Ocaml, which
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
+
+ []
+
+[2]
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+ (report.bbl
+report.bbl:57: You can't use `macro parameter character #' in horizontal mode
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+) [3] (report.aux) ) 
 Here is how much of TeX's memory you used:
- 1702 strings out of 493320
- 28273 string characters out of 3146754
- 90334 words of memory out of 3000000
- 5282 multiletter control sequences out of 15000+200000
- 30746 words of font info for 60 fonts, out of 3000000 for 9000
+ 1708 strings out of 493320
+ 28332 string characters out of 3146754
+ 93349 words of memory out of 3000000
+ 5287 multiletter control sequences out of 15000+200000
+ 31882 words of font info for 61 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 26i,5n,21p,582b,159s stack positions out of 5000i,500n,10000p,200000b,50000s
-{E:/MiKTex/fonts/enc/dvips/base/8r.enc}<E:/MiKTex/fonts/type1/urw
-/times/utmr8a.pfb>
-Output written on report.pdf (1 page, 17467 bytes).
+ 26i,5n,21p,1207b,159s stack positions out of 5000i,500n,10000p,200000b,50000s
+{E:/MiKTex/fonts/enc/dvips/base/8r.enc}<E:/MiKTex/fonts/typ
+e1/urw/times/utmr8a.pfb><E:/MiKTex/fonts/type1/urw/times/utmri8a.pfb>
+Output written on report.pdf (3 pages, 36904 bytes).
 PDF statistics:
- 11 PDF objects out of 1000 (max. 8388607)
+ 21 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

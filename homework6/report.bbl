@@ -27,4 +27,34 @@
   \url{https://www.docker.com/what-container}
 \BIBentrySTDinterwordspacing
 
+\bibitem{ocaml_2017}
+\BIBentryALTinterwordspacing
+Ocaml, ``ocaml/ocaml,'' Nov 2017. [Online]. Available:
+  \url{https://github.com/ocaml/ocaml/tree/trunk/asmcomp}
+\BIBentrySTDinterwordspacing
+
+\bibitem{leroy}
+\BIBentryALTinterwordspacing
+X.~Leroy, ``Caml weekly news.'' [Online]. Available:
+  \url{https://lwn.net/Articles/19378/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{the_rust}
+\BIBentryALTinterwordspacing
+``The rust programming language.'' [Online]. Available:
+  \url{https://www.rust-lang.org/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{infoq}
+\BIBentryALTinterwordspacing
+``Interview on rust, a systems programming language developed by mozilla.''
+  [Online]. Available: \url{https://www.infoq.com/news/2012/08/Interview-Rust}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Rust_questions}
+\BIBentryALTinterwordspacing
+``Frequently asked questions.'' [Online]. Available:
+  \url{https://www.rust-lang.org/en-US/faq.html#how-fast-is-rust}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}
